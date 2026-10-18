@@ -1,0 +1,17 @@
+{
+  "model": "mobilenet_v3_small (ImageNet-pretrained, 4-class head) - ORIGINAL checkpoint (not included in the review ZIP; this project never modifies it)",
+  "analysis_type": "image_only",
+  "scope": "hydroponic_lettuce_only",
+  "training_data": {
+    "name": "Lettuce-NPK-dataset (CC0)",
+    "images": 203,
+    "generation_sessions": 80,
+    "synthetic_images": true,
+    "provenance_note": "Every image carries OpenAI image-generation EXIF metadata: AI-generated, not verified photographs of real plants.",
+    "healthy_independent_sessions": 3
+  },
+  "validated_on_real_plants": false,
+  "config_name": "legacy_original_train_model",
+  "reliable_performance_estimate": "none for this checkpoint. Re-evaluate with evaluate_group_cv.py (config A_legacy_frozen replicates it).",
+  "legacy_metrics_warning": "artifacts/test_metrics.json (65.7% accuracy) came from an image-level split where 31/35 test images shared a generation session with training images; it is inflated by leakage and must not be quoted."
+}

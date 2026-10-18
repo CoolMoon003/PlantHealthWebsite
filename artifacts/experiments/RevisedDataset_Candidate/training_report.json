@@ -1,0 +1,184 @@
+{
+  "config_name": "C_frozen_weighted",
+  "config": {
+    "unfreeze_from": null,
+    "bn_eval_frozen": true,
+    "loss": "weighted",
+    "aug": "baseline",
+    "sampler": "none",
+    "label_smoothing": 0.0,
+    "lr": 0.001,
+    "backbone_lr": 0.0001,
+    "weight_decay": 0.0,
+    "batch_size": 16,
+    "max_epochs": 15,
+    "patience": 4,
+    "monitor": "macro_f1",
+    "pretrained": true,
+    "description": "B + inverse-frequency class-weighted cross-entropy.",
+    "complexity": 1
+  },
+  "seed": 42,
+  "best_epoch": 4,
+  "epochs_run": 8,
+  "history": [
+    {
+      "epoch": 1,
+      "val_score": 0.28936423054070115,
+      "val_loss": 1.0550768375396729
+    },
+    {
+      "epoch": 2,
+      "val_score": 0.7116402116402116,
+      "val_loss": 0.5865415930747986
+    },
+    {
+      "epoch": 3,
+      "val_score": 0.5871794871794871,
+      "val_loss": 0.9788654446601868
+    },
+    {
+      "epoch": 4,
+      "val_score": 0.8262108262108262,
+      "val_loss": 0.4874894618988037
+    },
+    {
+      "epoch": 5,
+      "val_score": 0.7822021116138762,
+      "val_loss": 0.8016338348388672
+    },
+    {
+      "epoch": 6,
+      "val_score": 0.7822021116138762,
+      "val_loss": 0.8417895436286926
+    },
+    {
+      "epoch": 7,
+      "val_score": 0.8262108262108262,
+      "val_loss": 0.5273956060409546
+    },
+    {
+      "epoch": 8,
+      "val_score": 0.7467320261437908,
+      "val_loss": 0.5432484745979309
+    }
+  ],
+  "validation_metrics_used_for_early_stopping": {
+    "n": 20,
+    "accuracy": 0.85,
+    "balanced_accuracy": 0.8857142857142858,
+    "macro_precision": 0.8333333333333334,
+    "macro_recall": 0.8857142857142858,
+    "macro_f1": 0.8262108262108262,
+    "per_class": [
+      {
+        "class_name": "Healthy",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      {
+        "class_name": "Nitrogen_Deficiency",
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.923076923076923,
+        "support": 7
+      },
+      {
+        "class_name": "Phosphorus_Deficiency",
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "support": 3
+      },
+      {
+        "class_name": "Potassium_Deficiency",
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889,
+        "support": 10
+      }
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        8
+      ]
+    ]
+  },
+  "train_sessions": [
+    "OpenAI--ImageGeneration--generation-236nAJmRVmcfKSqZ6Cnh58gv",
+    "OpenAI--ImageGeneration--generation-3ex4fcOvlUAbmPNKbSyojGoq",
+    "OpenAI--ImageGeneration--generation-4EkCjnuDGViuhvikwpCJUF9i",
+    "OpenAI--ImageGeneration--generation-4fJBzwNOifGReux8ZX8nzwha",
+    "OpenAI--ImageGeneration--generation-5rpfDVSWrpYmzX7XhvIFZL4q",
+    "OpenAI--ImageGeneration--generation-5tyyd4hfQlQw0Ijkl5GLFUhs",
+    "OpenAI--ImageGeneration--generation-7TnVnMjoxsDxkFxNng1ezUEy",
+    "OpenAI--ImageGeneration--generation-BiiDdw5CLVcMKQ1TM58T7pDR",
+    "OpenAI--ImageGeneration--generation-Dwren0JTAdE8ynPm6Je1hNtM",
+    "OpenAI--ImageGeneration--generation-HrogOIu9K0JY24MD5P9hrwao",
+    "OpenAI--ImageGeneration--generation-I1xja7VHKx6bW6Bf7LmqXhAY",
+    "OpenAI--ImageGeneration--generation-JxN5r3hEGZZII0xIKt0lfLRP",
+    "OpenAI--ImageGeneration--generation-MYk4Wv9QtsfdKVwnTXAwauoG",
+    "OpenAI--ImageGeneration--generation-OvORXr9jR1wY6GDEQLu4GdXz",
+    "OpenAI--ImageGeneration--generation-Ped5m7jvc1fQ3y1GaqgsLEHS",
+    "OpenAI--ImageGeneration--generation-SxZtX8m44XT2cpGqTyqfUPVi",
+    "OpenAI--ImageGeneration--generation-TYqqomndAQhvfh03huqnHfqA",
+    "OpenAI--ImageGeneration--generation-UWy3EflvRxxGLLi0uq6vpU3A",
+    "OpenAI--ImageGeneration--generation-V4TmPhBhjEqQtUFgXRZ474TY",
+    "OpenAI--ImageGeneration--generation-VE5szQL6Q032zBYbcB8zKJUa",
+    "OpenAI--ImageGeneration--generation-YkEtrZihnr7mAv0gXlfcIjCM",
+    "OpenAI--ImageGeneration--generation-aKepCw2krBA7NM5Werc3gHpo",
+    "OpenAI--ImageGeneration--generation-eI37000mLp9XZiI8JrXwkYAB",
+    "OpenAI--ImageGeneration--generation-imngKHqwntvazpu0MvfvJbJP",
+    "OpenAI--ImageGeneration--generation-ivOab2ZRhnkWQY5DYOrVRmln",
+    "OpenAI--ImageGeneration--generation-ktxwbWLdL2xF5FvKBVxDgfCw",
+    "OpenAI--ImageGeneration--generation-nRNhfMEroyeTFbHXLrDyhLeL",
+    "OpenAI--ImageGeneration--generation-qQjALT4zuc6jWuVp1BdNqVUf",
+    "OpenAI--ImageGeneration--generation-qdxRyL5xOV04btpf8VSgsggQ",
+    "OpenAI--ImageGeneration--generation-qjA3LGY0bGmrcGKKNR8EIdya",
+    "OpenAI--ImageGeneration--generation-r3XZ9uzXep2UYtXsTBZC5YTj",
+    "OpenAI--ImageGeneration--generation-rendGHKRVb6R8TIhdRFjMLQ1",
+    "OpenAI--ImageGeneration--generation-swkgIVqeRy1xTxWznziVkBTp",
+    "OpenAI--ImageGeneration--generation-tty2BVkruGBoch0XVPWE0Ph4",
+    "OpenAI--ImageGeneration--generation-viGsBZthhfabtUBnrgsxkWB9",
+    "OpenAI--ImageGeneration--generation-wiH1PwEMdcyqIablooqwQ6Ch",
+    "OpenAI--ImageGeneration--generation-xMg6jazR4V2AKicNYH8zGCwd",
+    "OpenAI--ImageGeneration--generation-yvSax3WDmxXqlJR5HiGHJ6Ts"
+  ],
+  "val_sessions": [
+    "OpenAI--ImageGeneration--generation-4Dl72anNOdlNxDu92cVgJSv3",
+    "OpenAI--ImageGeneration--generation-KPt0JowH4d1OHhOJdKIlyuOT",
+    "OpenAI--ImageGeneration--generation-WaDw8N6J0WCw7WKJiZTeI2Eo",
+    "OpenAI--ImageGeneration--generation-cBa4cr1rSVkqxQVMGOCwFAiX",
+    "OpenAI--ImageGeneration--generation-i0BO4hkbKeFlyrVBY8oH5NvE",
+    "OpenAI--ImageGeneration--generation-l3Q3MwFmvyBjOz53TMrZ5qoA",
+    "OpenAI--ImageGeneration--generation-m6bAEbSpIZY9dShgri4wTyJj",
+    "OpenAI--ImageGeneration--generation-qqMClyh2mRZiYj4wpmkYEIEp",
+    "OpenAI--ImageGeneration--generation-sxUStrOUzrJK3UOURyjOcaru"
+  ],
+  "trained_on": "train sessions only",
+  "torch": "2.14.1+cpu",
+  "python": "3.11.9"
+}

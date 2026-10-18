@@ -1,0 +1,217 @@
+{
+  "config_name": "H_robust_sampler",
+  "config": {
+    "unfreeze_from": null,
+    "bn_eval_frozen": true,
+    "loss": "ce",
+    "aug": "robust",
+    "sampler": "weighted",
+    "label_smoothing": 0.1,
+    "lr": 0.0003,
+    "backbone_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "batch_size": 16,
+    "max_epochs": 15,
+    "patience": 4,
+    "monitor": "macro_f1",
+    "pretrained": true,
+    "description": "D_frozen_weighted_lr3e-4 baseline with three targeted generalisation improvements: (1) WeightedRandomSampler replaces inverse-frequency loss weighting for class balance (sampler='weighted', loss='ce') to avoid the double-balancing interaction; (2) robust augmentation (aug='robust') adds RandomVerticalFlip, \u00b125\u00b0 rotation, moderate colour jitter (brightness/contrast/saturation 0.25, hue 0.04), RandomPerspective(0.2) and RandomGrayscale(0.05) \u2014 designed to preserve diagnostic leaf colours while reducing background-texture memorisation; (3) label_smoothing=0.1 reduces overconfidence on the ambiguous minority classes. Backbone frozen, bn_eval_frozen=True, weight_decay=1e-4, head lr=3e-4.",
+    "complexity": 2
+  },
+  "seed": 0,
+  "best_epoch": 4,
+  "epochs_run": 8,
+  "history": [
+    {
+      "epoch": 1,
+      "val_score": 0.4468196861321661,
+      "val_loss": 1.1695834398269653
+    },
+    {
+      "epoch": 2,
+      "val_score": 0.6846949891067539,
+      "val_loss": 0.7948780655860901
+    },
+    {
+      "epoch": 3,
+      "val_score": 0.8249299719887955,
+      "val_loss": 0.6561931371688843
+    },
+    {
+      "epoch": 4,
+      "val_score": 0.9268698983841412,
+      "val_loss": 0.579496443271637
+    },
+    {
+      "epoch": 5,
+      "val_score": 0.8463888888888889,
+      "val_loss": 0.513990581035614
+    },
+    {
+      "epoch": 6,
+      "val_score": 0.8755952380952381,
+      "val_loss": 0.4908592104911804
+    },
+    {
+      "epoch": 7,
+      "val_score": 0.8858225108225108,
+      "val_loss": 0.45541051030158997
+    },
+    {
+      "epoch": 8,
+      "val_score": 0.8647171099201133,
+      "val_loss": 0.4294804334640503
+    }
+  ],
+  "validation_metrics_used_for_early_stopping": {
+    "n": 45,
+    "accuracy": 0.9333333333333333,
+    "balanced_accuracy": 0.9458333333333333,
+    "macro_precision": 0.9154761904761906,
+    "macro_recall": 0.9458333333333333,
+    "macro_f1": 0.9268698983841412,
+    "per_class": [
+      {
+        "class_name": "Healthy",
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889,
+        "support": 4
+      },
+      {
+        "class_name": "Nitrogen_Deficiency",
+        "precision": 0.9333333333333333,
+        "recall": 1.0,
+        "f1": 0.9655172413793104,
+        "support": 14
+      },
+      {
+        "class_name": "Phosphorus_Deficiency",
+        "precision": 0.9285714285714286,
+        "recall": 0.8666666666666667,
+        "f1": 0.896551724137931,
+        "support": 15
+      },
+      {
+        "class_name": "Potassium_Deficiency",
+        "precision": 1.0,
+        "recall": 0.9166666666666666,
+        "f1": 0.9565217391304348,
+        "support": 12
+      }
+    ],
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        11
+      ]
+    ]
+  },
+  "train_sessions": [
+    "OpenAI--ImageGeneration--generation-236nAJmRVmcfKSqZ6Cnh58gv",
+    "OpenAI--ImageGeneration--generation-2eT6aAnZgKpyEuw7Nivd4AuX",
+    "OpenAI--ImageGeneration--generation-3ex4fcOvlUAbmPNKbSyojGoq",
+    "OpenAI--ImageGeneration--generation-4Dl72anNOdlNxDu92cVgJSv3",
+    "OpenAI--ImageGeneration--generation-4ayb7VNxopurFALSeC07sl0R",
+    "OpenAI--ImageGeneration--generation-4fJBzwNOifGReux8ZX8nzwha",
+    "OpenAI--ImageGeneration--generation-5rpfDVSWrpYmzX7XhvIFZL4q",
+    "OpenAI--ImageGeneration--generation-5tyyd4hfQlQw0Ijkl5GLFUhs",
+    "OpenAI--ImageGeneration--generation-7ER7t3wgEiMVah1zpzNBTNST",
+    "OpenAI--ImageGeneration--generation-86OsuXd943vqF3LpcX4ghd1i",
+    "OpenAI--ImageGeneration--generation-9qzPdXjqUZZNTkNpDbRn0wJa",
+    "OpenAI--ImageGeneration--generation-Dwren0JTAdE8ynPm6Je1hNtM",
+    "OpenAI--ImageGeneration--generation-EuZ6ax8RVAegHUuExG4Cwtge",
+    "OpenAI--ImageGeneration--generation-Ghub1vpLvjQrYlbhy4Vhstrh",
+    "OpenAI--ImageGeneration--generation-HCDn27hcM0H4RicVGDGF64xj",
+    "OpenAI--ImageGeneration--generation-HNTlWyp6QrGr15Fmz8Y1BPQa",
+    "OpenAI--ImageGeneration--generation-HrogOIu9K0JY24MD5P9hrwao",
+    "OpenAI--ImageGeneration--generation-I1xja7VHKx6bW6Bf7LmqXhAY",
+    "OpenAI--ImageGeneration--generation-JbG6lD0FQYbpHjO0Of3OdhDP",
+    "OpenAI--ImageGeneration--generation-KPt0JowH4d1OHhOJdKIlyuOT",
+    "OpenAI--ImageGeneration--generation-MYk4Wv9QtsfdKVwnTXAwauoG",
+    "OpenAI--ImageGeneration--generation-OvORXr9jR1wY6GDEQLu4GdXz",
+    "OpenAI--ImageGeneration--generation-PF6ACcucXR7zO2pHEXpJimVU",
+    "OpenAI--ImageGeneration--generation-Ped5m7jvc1fQ3y1GaqgsLEHS",
+    "OpenAI--ImageGeneration--generation-RE70icK08cznGHbNMTJVzwNr",
+    "OpenAI--ImageGeneration--generation-SceMyynWwCCu3dj98ALIXyzG",
+    "OpenAI--ImageGeneration--generation-TYqqomndAQhvfh03huqnHfqA",
+    "OpenAI--ImageGeneration--generation-UWy3EflvRxxGLLi0uq6vpU3A",
+    "OpenAI--ImageGeneration--generation-V4TmPhBhjEqQtUFgXRZ474TY",
+    "OpenAI--ImageGeneration--generation-VIJGne7GB9n1CGgYBO14SyqU",
+    "OpenAI--ImageGeneration--generation-WaDw8N6J0WCw7WKJiZTeI2Eo",
+    "OpenAI--ImageGeneration--generation-Wq5lcwPSVPsqy6vbW3uP7kZD",
+    "OpenAI--ImageGeneration--generation-YkEtrZihnr7mAv0gXlfcIjCM",
+    "OpenAI--ImageGeneration--generation-ZhsVki88EHXNM0H9PD0r6NQj",
+    "OpenAI--ImageGeneration--generation-ZihJAdjfjQAhDhrLXnHbBIuE",
+    "OpenAI--ImageGeneration--generation-ZnKZIT0pLwCfzvYjZTTKkmzA",
+    "OpenAI--ImageGeneration--generation-aKepCw2krBA7NM5Werc3gHpo",
+    "OpenAI--ImageGeneration--generation-ckirVcxVZOnS01dVEUfKi8Bx",
+    "OpenAI--ImageGeneration--generation-dqj6dZL69oV9B3OPamBAKhXc",
+    "OpenAI--ImageGeneration--generation-e770hKVf5Z9oVNu4TCrTMHIP",
+    "OpenAI--ImageGeneration--generation-hnyMTcEH4WTABcWlSroSiQYZ",
+    "OpenAI--ImageGeneration--generation-i0BO4hkbKeFlyrVBY8oH5NvE",
+    "OpenAI--ImageGeneration--generation-imngKHqwntvazpu0MvfvJbJP",
+    "OpenAI--ImageGeneration--generation-ivOab2ZRhnkWQY5DYOrVRmln",
+    "OpenAI--ImageGeneration--generation-jDsi9zqyIUyNw48w6fAp1uxg",
+    "OpenAI--ImageGeneration--generation-ktxwbWLdL2xF5FvKBVxDgfCw",
+    "OpenAI--ImageGeneration--generation-m6bAEbSpIZY9dShgri4wTyJj",
+    "OpenAI--ImageGeneration--generation-mUJwjPEwcrBpPkjWzKIOJxWo",
+    "OpenAI--ImageGeneration--generation-n4Atfy3v00Mdi5rNa8GM8PwK",
+    "OpenAI--ImageGeneration--generation-qF03xX82T3euSv31oqWPFxUJ",
+    "OpenAI--ImageGeneration--generation-qQjALT4zuc6jWuVp1BdNqVUf",
+    "OpenAI--ImageGeneration--generation-qdxRyL5xOV04btpf8VSgsggQ",
+    "OpenAI--ImageGeneration--generation-qjA3LGY0bGmrcGKKNR8EIdya",
+    "OpenAI--ImageGeneration--generation-qqMClyh2mRZiYj4wpmkYEIEp",
+    "OpenAI--ImageGeneration--generation-rUjxVLln65KWIHREWOjy6x7N",
+    "OpenAI--ImageGeneration--generation-rendGHKRVb6R8TIhdRFjMLQ1",
+    "OpenAI--ImageGeneration--generation-sxUStrOUzrJK3UOURyjOcaru",
+    "OpenAI--ImageGeneration--generation-tty2BVkruGBoch0XVPWE0Ph4",
+    "OpenAI--ImageGeneration--generation-uJTqa7HQrzYaeDeYrM6WFWlo",
+    "OpenAI--ImageGeneration--generation-vFkejLRodBqupvSW5WztbrrI",
+    "OpenAI--ImageGeneration--generation-viGsBZthhfabtUBnrgsxkWB9",
+    "OpenAI--ImageGeneration--generation-xMg6jazR4V2AKicNYH8zGCwd",
+    "OpenAI--ImageGeneration--generation-yvSax3WDmxXqlJR5HiGHJ6Ts",
+    "OpenAI--ImageGeneration--generation-zyS4Ab4Lzeanw077a1lKuWsL"
+  ],
+  "val_sessions": [
+    "OpenAI--ImageGeneration--generation-4EkCjnuDGViuhvikwpCJUF9i",
+    "OpenAI--ImageGeneration--generation-7TnVnMjoxsDxkFxNng1ezUEy",
+    "OpenAI--ImageGeneration--generation-BiiDdw5CLVcMKQ1TM58T7pDR",
+    "OpenAI--ImageGeneration--generation-JxN5r3hEGZZII0xIKt0lfLRP",
+    "OpenAI--ImageGeneration--generation-SxZtX8m44XT2cpGqTyqfUPVi",
+    "OpenAI--ImageGeneration--generation-VE5szQL6Q032zBYbcB8zKJUa",
+    "OpenAI--ImageGeneration--generation-WRJlkPETLwCma8M4gIqK7i4e",
+    "OpenAI--ImageGeneration--generation-cBa4cr1rSVkqxQVMGOCwFAiX",
+    "OpenAI--ImageGeneration--generation-eI37000mLp9XZiI8JrXwkYAB",
+    "OpenAI--ImageGeneration--generation-jgbALHvWSkgkQ6lQxnlZOeb5",
+    "OpenAI--ImageGeneration--generation-l3Q3MwFmvyBjOz53TMrZ5qoA",
+    "OpenAI--ImageGeneration--generation-nRNhfMEroyeTFbHXLrDyhLeL",
+    "OpenAI--ImageGeneration--generation-r3XZ9uzXep2UYtXsTBZC5YTj",
+    "OpenAI--ImageGeneration--generation-swkgIVqeRy1xTxWznziVkBTp",
+    "OpenAI--ImageGeneration--generation-v37ddSLEaP2lT9Tj3u5jQErq",
+    "OpenAI--ImageGeneration--generation-wiH1PwEMdcyqIablooqwQ6Ch"
+  ],
+  "trained_on": "all sessions, fixed 4 epochs",
+  "torch": "2.14.1+cpu",
+  "python": "3.11.9"
+}

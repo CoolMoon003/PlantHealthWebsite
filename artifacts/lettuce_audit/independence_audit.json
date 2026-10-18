@@ -1,0 +1,854 @@
+{
+  "dataset_name": "Lettuce-NPK-dataset",
+  "total_unique_images": 203,
+  "exact_duplicates_removed_prior": 5,
+  "provenance_findings": {
+    "total_with_openai_exif": 203,
+    "percent_ai_generated": 100.0,
+    "exif_maker_tag": {
+      "Made with OpenAI Labs": 203
+    },
+    "unique_generation_sessions": 80,
+    "generation_session_size_distribution": {
+      "4": 32,
+      "2": 13,
+      "3": 7,
+      "1": 28
+    }
+  },
+  "class_generation_breakdown": {
+    "Healthy": {
+      "image_count": 12,
+      "unique_generation_sessions": 3,
+      "avg_images_per_session": 4.0
+    },
+    "Nitrogen_Deficiency": {
+      "image_count": 57,
+      "unique_generation_sessions": 23,
+      "avg_images_per_session": 2.48
+    },
+    "Phosphorus_Deficiency": {
+      "image_count": 66,
+      "unique_generation_sessions": 27,
+      "avg_images_per_session": 2.44
+    },
+    "Potassium_Deficiency": {
+      "image_count": 68,
+      "unique_generation_sessions": 27,
+      "avg_images_per_session": 2.52
+    }
+  },
+  "independence_leakage": {
+    "total_generation_sessions": 80,
+    "sessions_spanning_multiple_splits": 35,
+    "percent_sessions_cross_split": 43.8,
+    "validation_leakage": {
+      "total_val_images": 28,
+      "val_images_sharing_gen_with_train": 23,
+      "percent_val_leakage": 82.1
+    },
+    "test_leakage": {
+      "total_test_images": 35,
+      "test_images_sharing_gen_with_train": 31,
+      "percent_test_leakage": 88.6,
+      "per_class": {
+        "Healthy": {
+          "test_images": 3,
+          "leaked_from_train": 3,
+          "leakage_percent": 100.0
+        },
+        "Nitrogen_Deficiency": {
+          "test_images": 10,
+          "leaked_from_train": 8,
+          "leakage_percent": 80.0
+        },
+        "Phosphorus_Deficiency": {
+          "test_images": 11,
+          "leaked_from_train": 10,
+          "leakage_percent": 90.9
+        },
+        "Potassium_Deficiency": {
+          "test_images": 11,
+          "leaked_from_train": 10,
+          "leakage_percent": 90.9
+        }
+      }
+    },
+    "cross_split_generation_details": [
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-zyS4Ab4Lzeanw077a1lKuWsL",
+        "label": "Healthy",
+        "total_images": 4,
+        "splits_present": [
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 3,
+          "val": 1
+        },
+        "filenames": [
+          "fn5.png",
+          "fn3.png",
+          "fn4.png",
+          "fn2.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-BiiDdw5CLVcMKQ1TM58T7pDR",
+        "label": "Healthy",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 2,
+          "test": 2
+        },
+        "filenames": [
+          "fn11.png",
+          "fn12.png",
+          "fn1.png",
+          "fn10.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-SceMyynWwCCu3dj98ALIXyzG",
+        "label": "Healthy",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 3,
+          "test": 1
+        },
+        "filenames": [
+          "fn6.png",
+          "fn7.png",
+          "fn9.png",
+          "fn8.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-YkEtrZihnr7mAv0gXlfcIjCM",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 3,
+          "test": 1
+        },
+        "filenames": [
+          "n_15.png",
+          "n_16.png",
+          "n_13.png",
+          "n_14.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-vFkejLRodBqupvSW5WztbrrI",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 3,
+          "val": 1
+        },
+        "filenames": [
+          "n_49.png",
+          "n_46.png",
+          "n_47.png",
+          "n_48.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-4EkCjnuDGViuhvikwpCJUF9i",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 3,
+          "test": 1
+        },
+        "filenames": [
+          "n_5.png",
+          "n_2.png",
+          "n_3.png",
+          "n_4.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-aKepCw2krBA7NM5Werc3gHpo",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 2
+        },
+        "filenames": [
+          "n_33.png",
+          "n_35.png",
+          "n_36.png",
+          "n_34.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-sxUStrOUzrJK3UOURyjOcaru",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 2,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 1,
+          "test": 1
+        },
+        "filenames": [
+          "n_40.png",
+          "n_45.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-hnyMTcEH4WTABcWlSroSiQYZ",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 2
+        },
+        "filenames": [
+          "n_52.png",
+          "n_53.png",
+          "n_50.png",
+          "n_51.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-ZihJAdjfjQAhDhrLXnHbBIuE",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 1,
+          "test": 3
+        },
+        "filenames": [
+          "n_9.png",
+          "n_8.png",
+          "n_10.png",
+          "n_11.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-l3Q3MwFmvyBjOz53TMrZ5qoA",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 1,
+          "val": 2,
+          "test": 1
+        },
+        "filenames": [
+          "n_43.png",
+          "n_44.png",
+          "n_41.png",
+          "n_42.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-Ghub1vpLvjQrYlbhy4Vhstrh",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 2,
+        "splits_present": [
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 1,
+          "val": 1
+        },
+        "filenames": [
+          "n_59.png",
+          "n_58.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-HNTlWyp6QrGr15Fmz8Y1BPQa",
+        "label": "Nitrogen_Deficiency",
+        "total_images": 3,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 2,
+          "test": 1
+        },
+        "filenames": [
+          "n_18.png",
+          "n_19.png",
+          "n_20.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-236nAJmRVmcfKSqZ6Cnh58gv",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 3,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 2,
+          "test": 1
+        },
+        "filenames": [
+          "p29.png",
+          "p31.png",
+          "p30.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-VIJGne7GB9n1CGgYBO14SyqU",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 3,
+          "val": 1
+        },
+        "filenames": [
+          "p63.png",
+          "p61.png",
+          "p62.png",
+          "p64.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-4ayb7VNxopurFALSeC07sl0R",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 3,
+          "test": 1
+        },
+        "filenames": [
+          "p37.png",
+          "p34.png",
+          "p35.png",
+          "p36.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-nRNhfMEroyeTFbHXLrDyhLeL",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 1,
+          "test": 1
+        },
+        "filenames": [
+          "p44.png",
+          "p45.png",
+          "p46.png",
+          "p43.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-HrogOIu9K0JY24MD5P9hrwao",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 3,
+          "val": 1
+        },
+        "filenames": [
+          "p14.png",
+          "p15.png",
+          "p12.png",
+          "p13.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-Dwren0JTAdE8ynPm6Je1hNtM",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 1,
+          "test": 1
+        },
+        "filenames": [
+          "p39.png",
+          "p40.png",
+          "p49.png",
+          "p48.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-v37ddSLEaP2lT9Tj3u5jQErq",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 3,
+        "splits_present": [
+          "test",
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 1,
+          "val": 1,
+          "test": 1
+        },
+        "filenames": [
+          "p4.png",
+          "p5.png",
+          "p3.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-86OsuXd943vqF3LpcX4ghd1i",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 2
+        },
+        "filenames": [
+          "p52.png",
+          "p53.png",
+          "p50.png",
+          "p51.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-yvSax3WDmxXqlJR5HiGHJ6Ts",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 1,
+          "test": 3
+        },
+        "filenames": [
+          "p22.png",
+          "p21.png",
+          "p19.png",
+          "p20.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-RE70icK08cznGHbNMTJVzwNr",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 2,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 1,
+          "test": 1
+        },
+        "filenames": [
+          "p7.png",
+          "p6.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-3ex4fcOvlUAbmPNKbSyojGoq",
+        "label": "Phosphorus_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 1,
+          "test": 1
+        },
+        "filenames": [
+          "p66.png",
+          "p68.png",
+          "p67.png",
+          "p65.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-ckirVcxVZOnS01dVEUfKi8Bx",
+        "label": "Potassium_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 1,
+          "val": 1,
+          "test": 2
+        },
+        "filenames": [
+          "k_52.png",
+          "k_51.png",
+          "k_53.png",
+          "k_54.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-MYk4Wv9QtsfdKVwnTXAwauoG",
+        "label": "Potassium_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 1,
+          "test": 1
+        },
+        "filenames": [
+          "k_38.png",
+          "k_39.png",
+          "k_40.png",
+          "k_41.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-7TnVnMjoxsDxkFxNng1ezUEy",
+        "label": "Potassium_Deficiency",
+        "total_images": 2,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 1,
+          "test": 1
+        },
+        "filenames": [
+          "k_42.png",
+          "k_36.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-qQjALT4zuc6jWuVp1BdNqVUf",
+        "label": "Potassium_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 2
+        },
+        "filenames": [
+          "k_48.png",
+          "k_45.png",
+          "k_47.png",
+          "k_49.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-WaDw8N6J0WCw7WKJiZTeI2Eo",
+        "label": "Potassium_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 3,
+          "test": 1
+        },
+        "filenames": [
+          "k_21.png",
+          "k_22.png",
+          "k_23.png",
+          "k_24.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-Wq5lcwPSVPsqy6vbW3uP7kZD",
+        "label": "Potassium_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 3,
+          "test": 1
+        },
+        "filenames": [
+          "k_5.png",
+          "k_3.png",
+          "k_2.png",
+          "k_4.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-ZnKZIT0pLwCfzvYjZTTKkmzA",
+        "label": "Potassium_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 1,
+          "test": 1
+        },
+        "filenames": [
+          "k_62.png",
+          "k_60.png",
+          "k_61.png",
+          "k_59.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-5rpfDVSWrpYmzX7XhvIFZL4q",
+        "label": "Potassium_Deficiency",
+        "total_images": 4,
+        "splits_present": [
+          "test",
+          "train",
+          "val"
+        ],
+        "split_counts": {
+          "train": 2,
+          "val": 1,
+          "test": 1
+        },
+        "filenames": [
+          "k_18.png",
+          "k_19.png",
+          "k_16.png",
+          "k_17.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-2eT6aAnZgKpyEuw7Nivd4AuX",
+        "label": "Potassium_Deficiency",
+        "total_images": 2,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 1,
+          "test": 1
+        },
+        "filenames": [
+          "k_43.png",
+          "k_44.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-xMg6jazR4V2AKicNYH8zGCwd",
+        "label": "Potassium_Deficiency",
+        "total_images": 3,
+        "splits_present": [
+          "test",
+          "train"
+        ],
+        "split_counts": {
+          "train": 2,
+          "test": 1
+        },
+        "filenames": [
+          "k_27.png",
+          "k_26.png",
+          "k_28.png"
+        ]
+      },
+      {
+        "generation_id": "OpenAI--ImageGeneration--generation-UWy3EflvRxxGLLi0uq6vpU3A",
+        "label": "Potassium_Deficiency",
+        "total_images": 2,
+        "splits_present": [
+          "test",
+          "val"
+        ],
+        "split_counts": {
+          "val": 1,
+          "test": 1
+        },
+        "filenames": [
+          "k_1.png",
+          "k_6.png"
+        ]
+      }
+    ]
+  },
+  "perceptual_hash_audit": {
+    "algorithm": "dHash (64-bit difference hash, 9x8 Lanczos grayscale gradient)",
+    "near_duplicate_threshold": "<= 10 Hamming distance out of 64",
+    "total_near_duplicate_pairs": 9,
+    "cross_split_near_duplicate_pairs": 4,
+    "sample_near_duplicate_pairs": [
+      {
+        "hamming_distance": 9,
+        "image1": "fn3.png",
+        "image2": "fn4.png",
+        "split1": "train",
+        "split2": "train",
+        "label1": "Healthy",
+        "label2": "Healthy",
+        "same_generation_id": true,
+        "cross_split": false
+      },
+      {
+        "hamming_distance": 9,
+        "image1": "k_9.png",
+        "image2": "k_8.png",
+        "split1": "train",
+        "split2": "train",
+        "label1": "Potassium_Deficiency",
+        "label2": "Potassium_Deficiency",
+        "same_generation_id": true,
+        "cross_split": false
+      },
+      {
+        "hamming_distance": 10,
+        "image1": "fn3.png",
+        "image2": "fn2.png",
+        "split1": "train",
+        "split2": "val",
+        "label1": "Healthy",
+        "label2": "Healthy",
+        "same_generation_id": true,
+        "cross_split": true
+      },
+      {
+        "hamming_distance": 10,
+        "image1": "fn11.png",
+        "image2": "k_62.png",
+        "split1": "train",
+        "split2": "train",
+        "label1": "Healthy",
+        "label2": "Potassium_Deficiency",
+        "same_generation_id": false,
+        "cross_split": false
+      },
+      {
+        "hamming_distance": 10,
+        "image1": "n_19.png",
+        "image2": "n_20.png",
+        "split1": "train",
+        "split2": "test",
+        "label1": "Nitrogen_Deficiency",
+        "label2": "Nitrogen_Deficiency",
+        "same_generation_id": true,
+        "cross_split": true
+      },
+      {
+        "hamming_distance": 10,
+        "image1": "p24.png",
+        "image2": "p31.png",
+        "split1": "train",
+        "split2": "train",
+        "label1": "Phosphorus_Deficiency",
+        "label2": "Phosphorus_Deficiency",
+        "same_generation_id": false,
+        "cross_split": false
+      },
+      {
+        "hamming_distance": 10,
+        "image1": "p67.png",
+        "image2": "k_7.png",
+        "split1": "val",
+        "split2": "val",
+        "label1": "Phosphorus_Deficiency",
+        "label2": "Potassium_Deficiency",
+        "same_generation_id": false,
+        "cross_split": false
+      },
+      {
+        "hamming_distance": 10,
+        "image1": "k_10.png",
+        "image2": "k_7.png",
+        "split1": "train",
+        "split2": "val",
+        "label1": "Potassium_Deficiency",
+        "label2": "Potassium_Deficiency",
+        "same_generation_id": false,
+        "cross_split": true
+      },
+      {
+        "hamming_distance": 10,
+        "image1": "k_7.png",
+        "image2": "k_41.png",
+        "split1": "val",
+        "split2": "test",
+        "label1": "Potassium_Deficiency",
+        "label2": "Potassium_Deficiency",
+        "same_generation_id": false,
+        "cross_split": true
+      }
+    ]
+  }
+}

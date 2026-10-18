@@ -1,0 +1,470 @@
+{
+  "summaries": {
+    "H_robust_sampler": {
+      "config_name": "H_robust_sampler",
+      "config": {
+        "description": "D_frozen_weighted_lr3e-4 baseline with three targeted generalisation improvements: (1) WeightedRandomSampler replaces inverse-frequency loss weighting for class balance (sampler='weighted', loss='ce') to avoid the double-balancing interaction; (2) robust augmentation (aug='robust') adds RandomVerticalFlip, \u00b125\u00b0 rotation, moderate colour jitter (brightness/contrast/saturation 0.25, hue 0.04), RandomPerspective(0.2) and RandomGrayscale(0.05) \u2014 designed to preserve diagnostic leaf colours while reducing background-texture memorisation; (3) label_smoothing=0.1 reduces overconfidence on the ambiguous minority classes. Backbone frozen, bn_eval_frozen=True, weight_decay=1e-4, head lr=3e-4.",
+        "bn_eval_frozen": true,
+        "loss": "ce",
+        "sampler": "weighted",
+        "aug": "robust",
+        "label_smoothing": 0.1,
+        "lr": 0.0003,
+        "weight_decay": 0.0001,
+        "monitor": "macro_f1",
+        "complexity": 2
+      },
+      "n_runs": 3,
+      "repeats": [
+        0
+      ],
+      "test_pooled_accuracy": {
+        "mean": 0.7142857142857143,
+        "std": 0.0,
+        "n": 1,
+        "min": 0.7142857142857143,
+        "max": 0.7142857142857143
+      },
+      "test_pooled_macro_f1": {
+        "mean": 0.618656241288345,
+        "std": 0.0,
+        "n": 1,
+        "min": 0.618656241288345,
+        "max": 0.618656241288345
+      },
+      "test_pooled_balanced_accuracy": {
+        "mean": 0.6203032648466085,
+        "std": 0.0,
+        "n": 1,
+        "min": 0.6203032648466085,
+        "max": 0.6203032648466085
+      },
+      "test_per_fold_accuracy": {
+        "mean": 0.7143693298214808,
+        "std": 0.0169774223697044,
+        "n": 3,
+        "min": 0.6911764705882353,
+        "max": 0.7313432835820896
+      },
+      "test_per_fold_macro_f1": {
+        "mean": 0.5925600191543411,
+        "std": 0.0370745147036319,
+        "n": 3,
+        "min": 0.5646802325581395,
+        "max": 0.6449553098015451
+      },
+      "test_per_class": {
+        "Healthy": {
+          "recall": {
+            "mean": 0.25,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.25,
+            "max": 0.25
+          },
+          "precision": {
+            "mean": 0.21428571428571427,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.21428571428571427,
+            "max": 0.21428571428571427
+          },
+          "f1": {
+            "mean": 0.23076923076923075,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.23076923076923075,
+            "max": 0.23076923076923075
+          },
+          "support_per_repeat": 12
+        },
+        "Nitrogen_Deficiency": {
+          "recall": {
+            "mean": 0.7543859649122807,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.7543859649122807,
+            "max": 0.7543859649122807
+          },
+          "precision": {
+            "mean": 0.6231884057971014,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.6231884057971014,
+            "max": 0.6231884057971014
+          },
+          "f1": {
+            "mean": 0.6825396825396826,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.6825396825396826,
+            "max": 0.6825396825396826
+          },
+          "support_per_repeat": 57
+        },
+        "Phosphorus_Deficiency": {
+          "recall": {
+            "mean": 0.7121212121212122,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.7121212121212122,
+            "max": 0.7121212121212122
+          },
+          "precision": {
+            "mean": 0.9038461538461539,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.9038461538461539,
+            "max": 0.9038461538461539
+          },
+          "f1": {
+            "mean": 0.7966101694915254,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.7966101694915254,
+            "max": 0.7966101694915254
+          },
+          "support_per_repeat": 66
+        },
+        "Potassium_Deficiency": {
+          "recall": {
+            "mean": 0.7647058823529411,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.7647058823529411,
+            "max": 0.7647058823529411
+          },
+          "precision": {
+            "mean": 0.7647058823529411,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.7647058823529411,
+            "max": 0.7647058823529411
+          },
+          "f1": {
+            "mean": 0.7647058823529412,
+            "std": 0.0,
+            "n": 1,
+            "min": 0.7647058823529412,
+            "max": 0.7647058823529412
+          },
+          "support_per_repeat": 68
+        }
+      },
+      "test_confusion_summed_over_repeats": [
+        [
+          3,
+          9,
+          0,
+          0
+        ],
+        [
+          7,
+          43,
+          0,
+          7
+        ],
+        [
+          1,
+          9,
+          47,
+          9
+        ],
+        [
+          3,
+          8,
+          5,
+          52
+        ]
+      ],
+      "test_pooled_per_repeat": [
+        {
+          "accuracy": 0.7142857142857143,
+          "macro_f1": 0.618656241288345,
+          "confusion_matrix": [
+            [
+              3,
+              9,
+              0,
+              0
+            ],
+            [
+              7,
+              43,
+              0,
+              7
+            ],
+            [
+              1,
+              9,
+              47,
+              9
+            ],
+            [
+              3,
+              8,
+              5,
+              52
+            ]
+          ]
+        }
+      ],
+      "test_group_bootstrap_ci": {
+        "accuracy": {
+          "metric": "accuracy",
+          "point": 0.7142857142857143,
+          "low": 0.625,
+          "high": 0.798995590698591,
+          "n_boot": 2000,
+          "n_groups": 80
+        },
+        "macro_f1": {
+          "metric": "macro_f1",
+          "point": 0.618656241288345,
+          "low": 0.5150714325203369,
+          "high": 0.773825501824671,
+          "n_boot": 2000,
+          "n_groups": 80
+        }
+      },
+      "inner_val_macro_f1": {
+        "mean": 0.8957751283088613,
+        "std": 0.023376086987749872,
+        "n": 3,
+        "min": 0.8757763975155278,
+        "max": 0.9285714285714285
+      },
+      "inner_val_accuracy": {
+        "mean": 0.8778108465608465,
+        "std": 0.03658624112324972,
+        "n": 3,
+        "min": 0.84375,
+        "max": 0.9285714285714286
+      },
+      "best_epoch": {
+        "mean": 8.666666666666666,
+        "std": 4.4969125210773475,
+        "n": 3,
+        "min": 3.0,
+        "max": 14.0
+      },
+      "mean_confidence_when_correct": 0.6581159552623486,
+      "mean_confidence_when_wrong": 0.5249145791448396
+    }
+  },
+  "selection": {
+    "choice": "H_robust_sampler",
+    "best_by_inner_val": "H_robust_sampler",
+    "inner_val_floor": 0.8822789381938838,
+    "eligible": [
+      "H_robust_sampler"
+    ],
+    "rationale": "Highest mean inner-validation macro-F1: H_robust_sampler (0.896, SE 0.013). Among configurations within one SE of it, the simplest (H_robust_sampler) is chosen. Outer test folds were not used for this choice.",
+    "baseline_note": null
+  },
+  "design": [
+    {
+      "repeat": 0,
+      "partition_seed": 0,
+      "folds": [
+        [
+          "OpenAI--ImageGeneration--generation-2eT6aAnZgKpyEuw7Nivd4AuX",
+          "OpenAI--ImageGeneration--generation-3ex4fcOvlUAbmPNKbSyojGoq",
+          "OpenAI--ImageGeneration--generation-5tyyd4hfQlQw0Ijkl5GLFUhs",
+          "OpenAI--ImageGeneration--generation-BiiDdw5CLVcMKQ1TM58T7pDR",
+          "OpenAI--ImageGeneration--generation-Ghub1vpLvjQrYlbhy4Vhstrh",
+          "OpenAI--ImageGeneration--generation-HCDn27hcM0H4RicVGDGF64xj",
+          "OpenAI--ImageGeneration--generation-HNTlWyp6QrGr15Fmz8Y1BPQa",
+          "OpenAI--ImageGeneration--generation-HrogOIu9K0JY24MD5P9hrwao",
+          "OpenAI--ImageGeneration--generation-I1xja7VHKx6bW6Bf7LmqXhAY",
+          "OpenAI--ImageGeneration--generation-PF6ACcucXR7zO2pHEXpJimVU",
+          "OpenAI--ImageGeneration--generation-TYqqomndAQhvfh03huqnHfqA",
+          "OpenAI--ImageGeneration--generation-VIJGne7GB9n1CGgYBO14SyqU",
+          "OpenAI--ImageGeneration--generation-YkEtrZihnr7mAv0gXlfcIjCM",
+          "OpenAI--ImageGeneration--generation-ZnKZIT0pLwCfzvYjZTTKkmzA",
+          "OpenAI--ImageGeneration--generation-ckirVcxVZOnS01dVEUfKi8Bx",
+          "OpenAI--ImageGeneration--generation-e770hKVf5Z9oVNu4TCrTMHIP",
+          "OpenAI--ImageGeneration--generation-eI37000mLp9XZiI8JrXwkYAB",
+          "OpenAI--ImageGeneration--generation-hnyMTcEH4WTABcWlSroSiQYZ",
+          "OpenAI--ImageGeneration--generation-ivOab2ZRhnkWQY5DYOrVRmln",
+          "OpenAI--ImageGeneration--generation-jDsi9zqyIUyNw48w6fAp1uxg",
+          "OpenAI--ImageGeneration--generation-l3Q3MwFmvyBjOz53TMrZ5qoA",
+          "OpenAI--ImageGeneration--generation-nRNhfMEroyeTFbHXLrDyhLeL",
+          "OpenAI--ImageGeneration--generation-qF03xX82T3euSv31oqWPFxUJ",
+          "OpenAI--ImageGeneration--generation-qQjALT4zuc6jWuVp1BdNqVUf",
+          "OpenAI--ImageGeneration--generation-qqMClyh2mRZiYj4wpmkYEIEp",
+          "OpenAI--ImageGeneration--generation-wiH1PwEMdcyqIablooqwQ6Ch"
+        ],
+        [
+          "OpenAI--ImageGeneration--generation-4Dl72anNOdlNxDu92cVgJSv3",
+          "OpenAI--ImageGeneration--generation-4EkCjnuDGViuhvikwpCJUF9i",
+          "OpenAI--ImageGeneration--generation-7TnVnMjoxsDxkFxNng1ezUEy",
+          "OpenAI--ImageGeneration--generation-JbG6lD0FQYbpHjO0Of3OdhDP",
+          "OpenAI--ImageGeneration--generation-JxN5r3hEGZZII0xIKt0lfLRP",
+          "OpenAI--ImageGeneration--generation-KPt0JowH4d1OHhOJdKIlyuOT",
+          "OpenAI--ImageGeneration--generation-MYk4Wv9QtsfdKVwnTXAwauoG",
+          "OpenAI--ImageGeneration--generation-SxZtX8m44XT2cpGqTyqfUPVi",
+          "OpenAI--ImageGeneration--generation-UWy3EflvRxxGLLi0uq6vpU3A",
+          "OpenAI--ImageGeneration--generation-V4TmPhBhjEqQtUFgXRZ474TY",
+          "OpenAI--ImageGeneration--generation-Wq5lcwPSVPsqy6vbW3uP7kZD",
+          "OpenAI--ImageGeneration--generation-ZihJAdjfjQAhDhrLXnHbBIuE",
+          "OpenAI--ImageGeneration--generation-aKepCw2krBA7NM5Werc3gHpo",
+          "OpenAI--ImageGeneration--generation-dqj6dZL69oV9B3OPamBAKhXc",
+          "OpenAI--ImageGeneration--generation-i0BO4hkbKeFlyrVBY8oH5NvE",
+          "OpenAI--ImageGeneration--generation-imngKHqwntvazpu0MvfvJbJP",
+          "OpenAI--ImageGeneration--generation-m6bAEbSpIZY9dShgri4wTyJj",
+          "OpenAI--ImageGeneration--generation-n4Atfy3v00Mdi5rNa8GM8PwK",
+          "OpenAI--ImageGeneration--generation-qdxRyL5xOV04btpf8VSgsggQ",
+          "OpenAI--ImageGeneration--generation-qjA3LGY0bGmrcGKKNR8EIdya",
+          "OpenAI--ImageGeneration--generation-r3XZ9uzXep2UYtXsTBZC5YTj",
+          "OpenAI--ImageGeneration--generation-rUjxVLln65KWIHREWOjy6x7N",
+          "OpenAI--ImageGeneration--generation-swkgIVqeRy1xTxWznziVkBTp",
+          "OpenAI--ImageGeneration--generation-uJTqa7HQrzYaeDeYrM6WFWlo",
+          "OpenAI--ImageGeneration--generation-v37ddSLEaP2lT9Tj3u5jQErq",
+          "OpenAI--ImageGeneration--generation-yvSax3WDmxXqlJR5HiGHJ6Ts",
+          "OpenAI--ImageGeneration--generation-zyS4Ab4Lzeanw077a1lKuWsL"
+        ],
+        [
+          "OpenAI--ImageGeneration--generation-236nAJmRVmcfKSqZ6Cnh58gv",
+          "OpenAI--ImageGeneration--generation-4ayb7VNxopurFALSeC07sl0R",
+          "OpenAI--ImageGeneration--generation-4fJBzwNOifGReux8ZX8nzwha",
+          "OpenAI--ImageGeneration--generation-5rpfDVSWrpYmzX7XhvIFZL4q",
+          "OpenAI--ImageGeneration--generation-7ER7t3wgEiMVah1zpzNBTNST",
+          "OpenAI--ImageGeneration--generation-86OsuXd943vqF3LpcX4ghd1i",
+          "OpenAI--ImageGeneration--generation-9qzPdXjqUZZNTkNpDbRn0wJa",
+          "OpenAI--ImageGeneration--generation-Dwren0JTAdE8ynPm6Je1hNtM",
+          "OpenAI--ImageGeneration--generation-EuZ6ax8RVAegHUuExG4Cwtge",
+          "OpenAI--ImageGeneration--generation-OvORXr9jR1wY6GDEQLu4GdXz",
+          "OpenAI--ImageGeneration--generation-Ped5m7jvc1fQ3y1GaqgsLEHS",
+          "OpenAI--ImageGeneration--generation-RE70icK08cznGHbNMTJVzwNr",
+          "OpenAI--ImageGeneration--generation-SceMyynWwCCu3dj98ALIXyzG",
+          "OpenAI--ImageGeneration--generation-VE5szQL6Q032zBYbcB8zKJUa",
+          "OpenAI--ImageGeneration--generation-WRJlkPETLwCma8M4gIqK7i4e",
+          "OpenAI--ImageGeneration--generation-WaDw8N6J0WCw7WKJiZTeI2Eo",
+          "OpenAI--ImageGeneration--generation-ZhsVki88EHXNM0H9PD0r6NQj",
+          "OpenAI--ImageGeneration--generation-cBa4cr1rSVkqxQVMGOCwFAiX",
+          "OpenAI--ImageGeneration--generation-jgbALHvWSkgkQ6lQxnlZOeb5",
+          "OpenAI--ImageGeneration--generation-ktxwbWLdL2xF5FvKBVxDgfCw",
+          "OpenAI--ImageGeneration--generation-mUJwjPEwcrBpPkjWzKIOJxWo",
+          "OpenAI--ImageGeneration--generation-rendGHKRVb6R8TIhdRFjMLQ1",
+          "OpenAI--ImageGeneration--generation-sxUStrOUzrJK3UOURyjOcaru",
+          "OpenAI--ImageGeneration--generation-tty2BVkruGBoch0XVPWE0Ph4",
+          "OpenAI--ImageGeneration--generation-vFkejLRodBqupvSW5WztbrrI",
+          "OpenAI--ImageGeneration--generation-viGsBZthhfabtUBnrgsxkWB9",
+          "OpenAI--ImageGeneration--generation-xMg6jazR4V2AKicNYH8zGCwd"
+        ]
+      ],
+      "verification": {
+        "n_folds": 3,
+        "per_fold": [
+          {
+            "fold": 0,
+            "test_images": 68,
+            "train_images": 135,
+            "test_groups": 26,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 7,
+                "train_images": 38,
+                "train_groups": 16
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 23,
+                "test_groups": 9,
+                "train_images": 45,
+                "train_groups": 18
+              }
+            }
+          },
+          {
+            "fold": 1,
+            "test_images": 68,
+            "train_images": 135,
+            "test_groups": 27,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 8,
+                "train_images": 38,
+                "train_groups": 15
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 23,
+                "test_groups": 9,
+                "train_images": 45,
+                "train_groups": 18
+              }
+            }
+          },
+          {
+            "fold": 2,
+            "test_images": 67,
+            "train_images": 136,
+            "test_groups": 27,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 8,
+                "train_images": 38,
+                "train_groups": 15
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 46,
+                "train_groups": 18
+              }
+            }
+          }
+        ],
+        "limitations": [
+          {
+            "class": "Healthy",
+            "min_test_groups_in_a_fold": 1,
+            "message": "Healthy: only 1 independent generation session(s) are tested per fold (threshold 3). Per-fold and pooled metrics for this class are driven by very few independent samples and are NOT statistically reliable."
+          }
+        ],
+        "leakage_found": false
+      }
+    }
+  ],
+  "torch": "2.14.1+cpu",
+  "seconds": 75.48454761505127
+}

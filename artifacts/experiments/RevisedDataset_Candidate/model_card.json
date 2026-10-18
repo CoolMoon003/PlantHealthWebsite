@@ -1,0 +1,54 @@
+{
+  "model": "mobilenet_v3_small (ImageNet-pretrained, new 4-class head)",
+  "analysis_type": "image_only",
+  "scope": "hydroponic_lettuce_only",
+  "training_data": {
+    "name": "Lettuce-NPK-dataset (CC0)",
+    "images": 119,
+    "generation_sessions": 47,
+    "synthetic_images": true,
+    "provenance_note": "Every training image carries OpenAI image-generation EXIF metadata: these are AI-generated images, not verified photographs of real plants.",
+    "healthy_independent_sessions": 1
+  },
+  "validated_on_real_plants": false,
+  "trained_on": "train sessions only",
+  "config_name": "C_frozen_weighted",
+  "reliable_performance_estimate": {
+    "source": "artifacts/group_cv/mobilenet_results.json",
+    "repeats": [
+      0,
+      1,
+      2
+    ],
+    "test_pooled_accuracy": {
+      "mean": 0.825944170771757,
+      "std": 0.03420799122495835,
+      "n": 3,
+      "min": 0.7783251231527094,
+      "max": 0.8571428571428571
+    },
+    "test_pooled_macro_f1": {
+      "mean": 0.7641843786558926,
+      "std": 0.0470851736746563,
+      "n": 3,
+      "min": 0.6984240962471645,
+      "max": 0.8061314550150961
+    },
+    "test_macro_f1_session_bootstrap_ci": {
+      "metric": "macro_f1",
+      "point": 0.7634067610100318,
+      "low": 0.65304958552307,
+      "high": 0.8684021702578182,
+      "n_boot": 2000,
+      "n_groups": 80
+    },
+    "healthy_recall": {
+      "mean": 0.5555555555555555,
+      "std": 0.10393492741038725,
+      "n": 3,
+      "min": 0.4166666666666667,
+      "max": 0.6666666666666666
+    }
+  },
+  "legacy_metrics_warning": "artifacts/test_metrics.json belongs to the OLD checkpoint and an image-level split in which 31/35 test images shared a generation session with training images; it is inflated by leakage."
+}

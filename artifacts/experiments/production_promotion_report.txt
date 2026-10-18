@@ -1,0 +1,15 @@
+Production checkpoint promotion
+Timestamp: 20261011_203333
+Installed checkpoint: A:\Projects!!!\PlantHealthWebsite\artifacts\plant_health_model.pth
+Source candidate: A:\Projects!!!\PlantHealthWebsite\artifacts\experiments\Exp_B_TwoStage_Frozen.pth
+Backup of previous production model: A:\Projects!!!\PlantHealthWebsite\artifacts\plant_health_model.backup_20261011_203333.pth
+SHA-256: 0fdfc4d2458607b3f54c8a6d302ded6bdea43f7575b23a282a0006e4c5485b88
+Held-out test images: 121
+Held-out accuracy: 97.52%
+Held-out balanced accuracy: 98.56%
+Held-out macro-F1: 96.00%
+Synthetic benchmark accuracy: 8.57%
+Synthetic benchmark balanced accuracy: 25.00%
+Synthetic benchmark macro-F1: 4.05%
+
+IMPORTANT: Held-out results do not establish real-world field accuracy. The candidate performed poorly on the synthetic benchmark; validate with independently labelled real plant photographs before making real-world accuracy claims.

@@ -1,0 +1,2 @@
+# Only needed for reference_baseline.py (colour-statistics reference model); not needed by the website or training.
+scikit-learn>=1.3

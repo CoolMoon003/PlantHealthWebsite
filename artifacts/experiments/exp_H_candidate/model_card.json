@@ -1,0 +1,18 @@
+{
+  "model": "mobilenet_v3_small (ImageNet-pretrained, new 4-class head)",
+  "analysis_type": "image_only",
+  "scope": "hydroponic_lettuce_only",
+  "training_data": {
+    "name": "Lettuce-NPK-dataset (CC0)",
+    "images": 203,
+    "generation_sessions": 80,
+    "synthetic_images": true,
+    "provenance_note": "Every training image carries OpenAI image-generation EXIF metadata: these are AI-generated images, not verified photographs of real plants.",
+    "healthy_independent_sessions": 3
+  },
+  "validated_on_real_plants": false,
+  "trained_on": "all sessions, fixed 4 epochs",
+  "config_name": "H_robust_sampler",
+  "reliable_performance_estimate": "none: run evaluate_group_cv.py; no held-out test set was used for this checkpoint",
+  "legacy_metrics_warning": "artifacts/test_metrics.json belongs to the OLD checkpoint and an image-level split in which 31/35 test images shared a generation session with training images; it is inflated by leakage."
+}

@@ -1,0 +1,10 @@
+# Dark green theme so Streamlit's built-in widgets (tables, expanders, inputs) match the page styling.
+[theme]
+base = "dark"
+primaryColor = "#8BE28B"
+backgroundColor = "#0B1210"
+secondaryBackgroundColor = "#111D18"
+textColor = "#E8ECE9"
+
+[browser]
+gatherUsageStats = false

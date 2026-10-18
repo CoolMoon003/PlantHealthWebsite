@@ -1,0 +1,155 @@
+{
+  "model": "MobileNetV3-Small",
+  "initialization": "ImageNet pretrained",
+  "dataset": "A:\\Projects!!!\\PlantHealthWebsite\\external_data\\lettuce_grouped_split",
+  "class_names": [
+    "Healthy",
+    "Nitrogen_Deficiency",
+    "Phosphorus_Deficiency",
+    "Potassium_Deficiency"
+  ],
+  "image_counts": {
+    "train": 400,
+    "valid": 134,
+    "test": 224
+  },
+  "best_epoch": 6,
+  "epochs_run": 9,
+  "validation_best_macro_f1": 1.0,
+  "test_metrics": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "classification_report": {
+      "Healthy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 159.0
+      },
+      "Nitrogen_Deficiency": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 9.0
+      },
+      "Phosphorus_Deficiency": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "Potassium_Deficiency": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 44.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 224.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 224.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        159,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        44
+      ]
+    ]
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0232483315467835,
+      "val_accuracy": 0.7164179104477612,
+      "val_balanced_accuracy": 0.6031080031080032,
+      "val_macro_f1": 0.5622183201638865
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4248692551255226,
+      "val_accuracy": 0.7761194029850746,
+      "val_balanced_accuracy": 0.7260683760683762,
+      "val_macro_f1": 0.7609052949538024
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.20924899071455003,
+      "val_accuracy": 0.9477611940298507,
+      "val_balanced_accuracy": 0.8948717948717948,
+      "val_macro_f1": 0.9301782711761625
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.11354472525417805,
+      "val_accuracy": 0.9850746268656716,
+      "val_balanced_accuracy": 0.95,
+      "val_macro_f1": 0.9684908789386402
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.08305056288838386,
+      "val_accuracy": 0.9850746268656716,
+      "val_balanced_accuracy": 0.95,
+      "val_macro_f1": 0.9684908789386402
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.051617078073322775,
+      "val_accuracy": 1.0,
+      "val_balanced_accuracy": 1.0,
+      "val_macro_f1": 1.0
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.060711833704262974,
+      "val_accuracy": 1.0,
+      "val_balanced_accuracy": 1.0,
+      "val_macro_f1": 1.0
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.022526933290064336,
+      "val_accuracy": 1.0,
+      "val_balanced_accuracy": 1.0,
+      "val_macro_f1": 1.0
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.026193641079589724,
+      "val_accuracy": 1.0,
+      "val_balanced_accuracy": 1.0,
+      "val_macro_f1": 1.0
+    }
+  ],
+  "warning": "Test metrics apply to this dataset and may not represent performance on real-world plant photographs."
+}

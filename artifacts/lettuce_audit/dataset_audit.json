@@ -1,0 +1,43 @@
+{
+  "csv": "data\\dataset_manifest.csv",
+  "image_root": ".",
+  "row_count": 203,
+  "allowed_classes": [
+    "Healthy",
+    "Nitrogen_Deficiency",
+    "Phosphorus_Deficiency",
+    "Potassium_Deficiency"
+  ],
+  "class_counts": {
+    "all": {
+      "Healthy": 12,
+      "Nitrogen_Deficiency": 57,
+      "Phosphorus_Deficiency": 66,
+      "Potassium_Deficiency": 68
+    },
+    "by_split": {
+      "train": {
+        "Healthy": 8,
+        "Nitrogen_Deficiency": 39,
+        "Phosphorus_Deficiency": 46,
+        "Potassium_Deficiency": 47
+      },
+      "val": {
+        "Healthy": 1,
+        "Nitrogen_Deficiency": 8,
+        "Phosphorus_Deficiency": 9,
+        "Potassium_Deficiency": 10
+      },
+      "test": {
+        "Healthy": 3,
+        "Nitrogen_Deficiency": 10,
+        "Phosphorus_Deficiency": 11,
+        "Potassium_Deficiency": 11
+      }
+    }
+  },
+  "duplicate_groups": [],
+  "duplicate_groups_across_splits": [],
+  "errors": [],
+  "ready_for_training": true
+}

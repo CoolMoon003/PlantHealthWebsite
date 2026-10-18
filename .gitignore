@@ -1,0 +1,59 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and environment configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Model checkpoints and backups
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+
+# Datasets and generated experiment outputs
+datasets/
+datasets_*/
+data/raw/
+data/processed/
+unwanted/
+runs/
+mlruns/
+wandb/
+report_evidence/
+__pycache__/
+
+# Local databases and logs
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Generated reports (keep source code and README)
+MINI_PROJECT_REPORT.pdf
+MINI_PROJECT_REPORT.docx
+
+# Local exports
+exports/
+outputs/

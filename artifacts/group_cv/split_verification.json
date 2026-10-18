@@ -1,0 +1,403 @@
+{
+  "files_found": 203,
+  "unique_images": 203,
+  "exact_duplicate_files_ignored": 0,
+  "summary": {
+    "images": 203,
+    "groups": 80,
+    "per_class": {
+      "Healthy": {
+        "images": 12,
+        "groups": 3,
+        "group_size_distribution": {
+          "4": 3
+        }
+      },
+      "Nitrogen_Deficiency": {
+        "images": 57,
+        "groups": 23,
+        "group_size_distribution": {
+          "1": 9,
+          "2": 3,
+          "3": 2,
+          "4": 9
+        }
+      },
+      "Phosphorus_Deficiency": {
+        "images": 66,
+        "groups": 27,
+        "group_size_distribution": {
+          "1": 11,
+          "2": 3,
+          "3": 3,
+          "4": 10
+        }
+      },
+      "Potassium_Deficiency": {
+        "images": 68,
+        "groups": 27,
+        "group_size_distribution": {
+          "1": 8,
+          "2": 7,
+          "3": 2,
+          "4": 10
+        }
+      }
+    }
+  },
+  "distinct_partitions_among_repeats": 3,
+  "min_reliable_test_groups_threshold": 3,
+  "repeats": [
+    {
+      "repeat": 0,
+      "partition_seed": 0,
+      "verification": {
+        "n_folds": 3,
+        "per_fold": [
+          {
+            "fold": 0,
+            "test_images": 68,
+            "train_images": 135,
+            "test_groups": 26,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 7,
+                "train_images": 38,
+                "train_groups": 16
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 23,
+                "test_groups": 9,
+                "train_images": 45,
+                "train_groups": 18
+              }
+            }
+          },
+          {
+            "fold": 1,
+            "test_images": 68,
+            "train_images": 135,
+            "test_groups": 27,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 8,
+                "train_images": 38,
+                "train_groups": 15
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 23,
+                "test_groups": 9,
+                "train_images": 45,
+                "train_groups": 18
+              }
+            }
+          },
+          {
+            "fold": 2,
+            "test_images": 67,
+            "train_images": 136,
+            "test_groups": 27,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 8,
+                "train_images": 38,
+                "train_groups": 15
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 46,
+                "train_groups": 18
+              }
+            }
+          }
+        ],
+        "limitations": [
+          {
+            "class": "Healthy",
+            "min_test_groups_in_a_fold": 1,
+            "message": "Healthy: only 1 independent generation session(s) are tested per fold (threshold 3). Per-fold and pooled metrics for this class are driven by very few independent samples and are NOT statistically reliable."
+          }
+        ],
+        "leakage_found": false
+      }
+    },
+    {
+      "repeat": 1,
+      "partition_seed": 1,
+      "verification": {
+        "n_folds": 3,
+        "per_fold": [
+          {
+            "fold": 0,
+            "test_images": 68,
+            "train_images": 135,
+            "test_groups": 26,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 7,
+                "train_images": 38,
+                "train_groups": 16
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 23,
+                "test_groups": 9,
+                "train_images": 45,
+                "train_groups": 18
+              }
+            }
+          },
+          {
+            "fold": 1,
+            "test_images": 68,
+            "train_images": 135,
+            "test_groups": 27,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 8,
+                "train_images": 38,
+                "train_groups": 15
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 23,
+                "test_groups": 9,
+                "train_images": 45,
+                "train_groups": 18
+              }
+            }
+          },
+          {
+            "fold": 2,
+            "test_images": 67,
+            "train_images": 136,
+            "test_groups": 27,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 8,
+                "train_images": 38,
+                "train_groups": 15
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 46,
+                "train_groups": 18
+              }
+            }
+          }
+        ],
+        "limitations": [
+          {
+            "class": "Healthy",
+            "min_test_groups_in_a_fold": 1,
+            "message": "Healthy: only 1 independent generation session(s) are tested per fold (threshold 3). Per-fold and pooled metrics for this class are driven by very few independent samples and are NOT statistically reliable."
+          }
+        ],
+        "leakage_found": false
+      }
+    },
+    {
+      "repeat": 2,
+      "partition_seed": 2,
+      "verification": {
+        "n_folds": 3,
+        "per_fold": [
+          {
+            "fold": 0,
+            "test_images": 68,
+            "train_images": 135,
+            "test_groups": 26,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 7,
+                "train_images": 38,
+                "train_groups": 16
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 23,
+                "test_groups": 9,
+                "train_images": 45,
+                "train_groups": 18
+              }
+            }
+          },
+          {
+            "fold": 1,
+            "test_images": 68,
+            "train_images": 135,
+            "test_groups": 27,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 8,
+                "train_images": 38,
+                "train_groups": 15
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 23,
+                "test_groups": 9,
+                "train_images": 45,
+                "train_groups": 18
+              }
+            }
+          },
+          {
+            "fold": 2,
+            "test_images": 67,
+            "train_images": 136,
+            "test_groups": 27,
+            "per_class": {
+              "Healthy": {
+                "test_images": 4,
+                "test_groups": 1,
+                "train_images": 8,
+                "train_groups": 2
+              },
+              "Nitrogen_Deficiency": {
+                "test_images": 19,
+                "test_groups": 8,
+                "train_images": 38,
+                "train_groups": 15
+              },
+              "Phosphorus_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 44,
+                "train_groups": 18
+              },
+              "Potassium_Deficiency": {
+                "test_images": 22,
+                "test_groups": 9,
+                "train_images": 46,
+                "train_groups": 18
+              }
+            }
+          }
+        ],
+        "limitations": [
+          {
+            "class": "Healthy",
+            "min_test_groups_in_a_fold": 1,
+            "message": "Healthy: only 1 independent generation session(s) are tested per fold (threshold 3). Per-fold and pooled metrics for this class are driven by very few independent samples and are NOT statistically reliable."
+          }
+        ],
+        "leakage_found": false
+      }
+    }
+  ],
+  "legacy_split_leakage": {
+    "val": {
+      "images": 28,
+      "images_sharing_session_with_train": 23
+    },
+    "test": {
+      "images": 35,
+      "images_sharing_session_with_train": 31
+    },
+    "sessions_in_more_than_one_split": 35
+  },
+  "all_checks_passed": true
+}

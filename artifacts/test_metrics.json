@@ -1,0 +1,64 @@
+{
+  "accuracy": 0.6571428571428571,
+  "macro_precision": 0.743421052631579,
+  "macro_recall": 0.6643939393939394,
+  "macro_f1": 0.6633423484336264,
+  "per_class": [
+    {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1": 0.6666666666666666,
+      "support": 3
+    },
+    {
+      "precision": 0.47368421052631576,
+      "recall": 0.9,
+      "f1": 0.6206896551724138,
+      "support": 10
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.6363636363636364,
+      "f1": 0.7777777777777778,
+      "support": 11
+    },
+    {
+      "precision": 0.8333333333333334,
+      "recall": 0.45454545454545453,
+      "f1": 0.5882352941176471,
+      "support": 11
+    }
+  ],
+  "class_order": [
+    "Healthy",
+    "Nitrogen_Deficiency",
+    "Phosphorus_Deficiency",
+    "Potassium_Deficiency"
+  ],
+  "confusion_matrix": [
+    [
+      2,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      9,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      7,
+      1
+    ],
+    [
+      0,
+      6,
+      0,
+      5
+    ]
+  ]
+}

@@ -1,0 +1,82 @@
+﻿{
+    "dataset":  "DATASET/NPK_v3_classification_candidate",
+    "class_names":  [
+                        "Healthy",
+                        "Nitrogen_Deficiency",
+                        "Phosphorus_Deficiency",
+                        "Potassium_Deficiency"
+                    ],
+    "device":  "cpu",
+    "fit_images":  1574,
+    "internal_validation_images":  278,
+    "official_validation_images":  57,
+    "held_out_test_images":  56,
+    "best_epoch":  null,
+    "training_history":  "Not saved; original run output recorded epochs 1-6 and early stopping.",
+    "official_validation":  {
+                                "accuracy":  0.9825,
+                                "balanced_accuracy":  0.9844,
+                                "macro_f1":  0.9861,
+                                "confusion_matrix":  [
+                                                         [
+                                                             4,
+                                                             0,
+                                                             0,
+                                                             0
+                                                         ],
+                                                         [
+                                                             0,
+                                                             16,
+                                                             0,
+                                                             0
+                                                         ],
+                                                         [
+                                                             0,
+                                                             0,
+                                                             21,
+                                                             0
+                                                         ],
+                                                         [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             15
+                                                         ]
+                                                     ]
+                            },
+    "held_out_test":  {
+                          "accuracy":  0.9643,
+                          "balanced_accuracy":  0.9564,
+                          "macro_f1":  0.96,
+                          "correct_predictions":  54,
+                          "total_predictions":  56,
+                          "confusion_matrix":  [
+                                                   [
+                                                       10,
+                                                       1,
+                                                       0,
+                                                       0
+                                                   ],
+                                                   [
+                                                       0,
+                                                       10,
+                                                       0,
+                                                       0
+                                                   ],
+                                                   [
+                                                       0,
+                                                       0,
+                                                       23,
+                                                       0
+                                                   ],
+                                                   [
+                                                       0,
+                                                       0,
+                                                       1,
+                                                       11
+                                                   ]
+                                               ]
+                      },
+    "warning":  "Results are from a small external dataset and do not establish real-world accuracy.",
+    "report_note":  "Metrics transcribed from the captured terminal output. Per-image predictions were not saved."
+}

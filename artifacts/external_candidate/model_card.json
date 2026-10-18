@@ -1,0 +1,39 @@
+{
+  "model_details": {
+    "name": "MobileNetV3-Small Lettuce Health Classifier (Exp_A_EndToEnd_Weighted)",
+    "version": "candidate_validation_selected_v1.0",
+    "architecture": "MobileNetV3-Small",
+    "selection_protocol": "Selected strictly on validation macro-F1 without test leakage",
+    "input_resolution": "224x224 RGB",
+    "supported_crops": [
+      "Lettuce"
+    ],
+    "classes": [
+      "Healthy",
+      "Nitrogen_Deficiency",
+      "Phosphorus_Deficiency",
+      "Potassium_Deficiency"
+    ]
+  },
+  "intended_use": {
+    "purpose": "Educational college demo for lettuce nutrient deficiency screening.",
+    "unsupported_uses": [
+      "Agricultural diagnostic certification.",
+      "Non-lettuce crops.",
+      "Synthetic AI-generated images (model was trained on real plant photos and will misclassify DALL-E art).",
+      "Multimodal soil inference (soil is provisional rule-based)."
+    ]
+  },
+  "evaluation_summary": {
+    "validation_macro_f1": 0.9352,
+    "validation_balanced_accuracy": 0.9,
+    "held_out_test_macro_f1": 1.0,
+    "out_of_domain_synthetic_test_accuracy": 0.0857
+  },
+  "critical_limitations": [
+    "Valid set Healthy class has 211 images from 1 longitudinal cohort; balanced metrics were used to prevent bias.",
+    "Deficiency images are sourced from greenhouse hydroponics (16 N groups, 19 P groups, 15 K groups).",
+    "Outdoor field photographs under diverse solar angles may experience domain shift.",
+    "Synthetic DALL-E images cannot be diagnosed reliably by this model."
+  ]
+}

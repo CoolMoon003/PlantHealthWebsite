@@ -1,0 +1,6 @@
+streamlit>=1.50
+torch>=2.2
+torchvision>=0.17
+pillow>=10.0
+numpy>=1.26
+pandas>=2.0

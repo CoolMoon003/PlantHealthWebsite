@@ -1,0 +1,14 @@
+{
+  "config_name": "D_frozen_weighted_lr3e-4",
+  "config": {
+    "description": "C with a 3x lower head learning rate.",
+    "bn_eval_frozen": true,
+    "loss": "weighted",
+    "aug": "baseline",
+    "lr": 0.0003,
+    "weight_decay": 0.0,
+    "monitor": "macro_f1",
+    "complexity": 1
+  },
+  "rationale": "Selected to resolve severe Healthy-class under-detection caused by dataset imbalance (Healthy: 12 images vs 57-68 in deficiency classes). D_frozen_weighted_lr3e-4 achieves 66.7% ± 11.8% Healthy recall (vs 38.9% in B_frozen_bn_eval), 77.6% ± 4.5% balanced accuracy, 80.3% ± 2.6% test accuracy, and 75.8% ± 4.0% macro-F1 across 3-fold group-aware cross validation."
+}

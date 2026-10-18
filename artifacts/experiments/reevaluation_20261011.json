@@ -1,0 +1,341 @@
+{
+  "classes": [
+    "Healthy",
+    "Nitrogen_Deficiency",
+    "Phosphorus_Deficiency",
+    "Potassium_Deficiency"
+  ],
+  "preprocessing": {
+    "image_size": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "checkpoints": {
+    "Production": {
+      "path": "artifacts\\plant_health_model.pth",
+      "sha256": "ed3e5679380e183732d7cf5b081ffd3215c50a5f4692cd75ab3f5127d5576759"
+    },
+    "ExperimentB": {
+      "path": "artifacts\\experiments\\Exp_B_TwoStage_Frozen.pth",
+      "sha256": "0fdfc4d2458607b3f54c8a6d302ded6bdea43f7575b23a282a0006e4c5485b88"
+    }
+  },
+  "datasets": {
+    "heldout_test": {
+      "_folder": "external_data\\lettuce_leak_free_split\\test",
+      "_n": 121,
+      "Production": {
+        "n_images": 121,
+        "accuracy": 0.4297520661157025,
+        "accuracy_wilson95": [
+          0.3450488029060408,
+          0.5187784853014428
+        ],
+        "balanced_accuracy": 0.3982269503546099,
+        "macro_f1": 0.3684451219512195,
+        "per_class": {
+          "Healthy": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "support": 52,
+            "predicted": 13
+          },
+          "Nitrogen_Deficiency": {
+            "precision": 0.03225806451612903,
+            "recall": 0.1,
+            "f1": 0.04878048780487805,
+            "support": 10,
+            "predicted": 31
+          },
+          "Phosphorus_Deficiency": {
+            "precision": 0.1590909090909091,
+            "recall": 0.5833333333333334,
+            "f1": 0.25,
+            "support": 12,
+            "predicted": 44
+          },
+          "Potassium_Deficiency": {
+            "precision": 0.9393939393939394,
+            "recall": 0.6595744680851063,
+            "f1": 0.775,
+            "support": 47,
+            "predicted": 33
+          }
+        },
+        "confusion_matrix": [
+          [
+            13,
+            18,
+            20,
+            1
+          ],
+          [
+            0,
+            1,
+            8,
+            1
+          ],
+          [
+            0,
+            5,
+            7,
+            0
+          ],
+          [
+            0,
+            7,
+            9,
+            31
+          ]
+        ],
+        "predicted_class_share": {
+          "Healthy": 0.10743801652892562,
+          "Nitrogen_Deficiency": 0.256198347107438,
+          "Phosphorus_Deficiency": 0.36363636363636365,
+          "Potassium_Deficiency": 0.2727272727272727
+        },
+        "mean_top_probability": 0.4496075634128791,
+        "share_confident_ge_0.90": 0.0,
+        "confident_wrong_rate_ge_0.90": 0.0
+      },
+      "ExperimentB": {
+        "n_images": 121,
+        "accuracy": 0.9752066115702479,
+        "accuracy_wilson95": [
+          0.9296356587182137,
+          0.9915326857605731
+        ],
+        "balanced_accuracy": 0.9855769230769231,
+        "macro_f1": 0.9599655617735687,
+        "per_class": {
+          "Healthy": {
+            "precision": 1.0,
+            "recall": 0.9423076923076923,
+            "f1": 0.9702970297029703,
+            "support": 52,
+            "predicted": 49
+          },
+          "Nitrogen_Deficiency": {
+            "precision": 0.7692307692307693,
+            "recall": 1.0,
+            "f1": 0.8695652173913044,
+            "support": 10,
+            "predicted": 13
+          },
+          "Phosphorus_Deficiency": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "predicted": 12
+          },
+          "Potassium_Deficiency": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 47,
+            "predicted": 47
+          }
+        },
+        "confusion_matrix": [
+          [
+            49,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            47
+          ]
+        ],
+        "predicted_class_share": {
+          "Healthy": 0.4049586776859504,
+          "Nitrogen_Deficiency": 0.10743801652892562,
+          "Phosphorus_Deficiency": 0.09917355371900827,
+          "Potassium_Deficiency": 0.3884297520661157
+        },
+        "mean_top_probability": 0.984646237093555,
+        "share_confident_ge_0.90": 0.9586776859504132,
+        "confident_wrong_rate_ge_0.90": 0.0
+      }
+    },
+    "synthetic_benchmark": {
+      "_folder": "data\\test",
+      "_n": 35,
+      "Production": {
+        "n_images": 35,
+        "accuracy": 0.6571428571428571,
+        "accuracy_wilson95": [
+          0.4915194938408475,
+          0.7916830509867624
+        ],
+        "balanced_accuracy": 0.6643939393939394,
+        "macro_f1": 0.6633423484336264,
+        "per_class": {
+          "Healthy": {
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "f1": 0.6666666666666666,
+            "support": 3,
+            "predicted": 3
+          },
+          "Nitrogen_Deficiency": {
+            "precision": 0.47368421052631576,
+            "recall": 0.9,
+            "f1": 0.6206896551724138,
+            "support": 10,
+            "predicted": 19
+          },
+          "Phosphorus_Deficiency": {
+            "precision": 1.0,
+            "recall": 0.6363636363636364,
+            "f1": 0.7777777777777778,
+            "support": 11,
+            "predicted": 7
+          },
+          "Potassium_Deficiency": {
+            "precision": 0.8333333333333334,
+            "recall": 0.45454545454545453,
+            "f1": 0.5882352941176471,
+            "support": 11,
+            "predicted": 6
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            7,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            5
+          ]
+        ],
+        "predicted_class_share": {
+          "Healthy": 0.08571428571428572,
+          "Nitrogen_Deficiency": 0.5428571428571428,
+          "Phosphorus_Deficiency": 0.2,
+          "Potassium_Deficiency": 0.17142857142857143
+        },
+        "mean_top_probability": 0.6132269876343863,
+        "share_confident_ge_0.90": 0.0,
+        "confident_wrong_rate_ge_0.90": 0.0
+      },
+      "ExperimentB": {
+        "n_images": 35,
+        "accuracy": 0.08571428571428572,
+        "accuracy_wilson95": [
+          0.02958236803634305,
+          0.22379274105450336
+        ],
+        "balanced_accuracy": 0.25,
+        "macro_f1": 0.04054054054054055,
+        "per_class": {
+          "Healthy": {
+            "precision": 0.08823529411764706,
+            "recall": 1.0,
+            "f1": 0.1621621621621622,
+            "support": 3,
+            "predicted": 34
+          },
+          "Nitrogen_Deficiency": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 10,
+            "predicted": 0
+          },
+          "Phosphorus_Deficiency": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 11,
+            "predicted": 0
+          },
+          "Potassium_Deficiency": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 11,
+            "predicted": 1
+          }
+        },
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0,
+            1
+          ],
+          [
+            11,
+            0,
+            0,
+            0
+          ]
+        ],
+        "predicted_class_share": {
+          "Healthy": 0.9714285714285714,
+          "Nitrogen_Deficiency": 0.0,
+          "Phosphorus_Deficiency": 0.0,
+          "Potassium_Deficiency": 0.02857142857142857
+        },
+        "mean_top_probability": 0.9618940557752337,
+        "share_confident_ge_0.90": 0.8857142857142857,
+        "confident_wrong_rate_ge_0.90": 0.8
+      }
+    }
+  }
+}

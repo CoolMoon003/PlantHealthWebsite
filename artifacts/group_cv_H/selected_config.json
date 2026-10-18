@@ -1,0 +1,16 @@
+{
+  "config_name": "H_robust_sampler",
+  "config": {
+    "description": "D_frozen_weighted_lr3e-4 baseline with three targeted generalisation improvements: (1) WeightedRandomSampler replaces inverse-frequency loss weighting for class balance (sampler='weighted', loss='ce') to avoid the double-balancing interaction; (2) robust augmentation (aug='robust') adds RandomVerticalFlip, \u00b125\u00b0 rotation, moderate colour jitter (brightness/contrast/saturation 0.25, hue 0.04), RandomPerspective(0.2) and RandomGrayscale(0.05) \u2014 designed to preserve diagnostic leaf colours while reducing background-texture memorisation; (3) label_smoothing=0.1 reduces overconfidence on the ambiguous minority classes. Backbone frozen, bn_eval_frozen=True, weight_decay=1e-4, head lr=3e-4.",
+    "bn_eval_frozen": true,
+    "loss": "ce",
+    "sampler": "weighted",
+    "aug": "robust",
+    "label_smoothing": 0.1,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "monitor": "macro_f1",
+    "complexity": 2
+  },
+  "rationale": "Highest mean inner-validation macro-F1: H_robust_sampler (0.896, SE 0.013). Among configurations within one SE of it, the simplest (H_robust_sampler) is chosen. Outer test folds were not used for this choice."
+}

@@ -1,0 +1,1442 @@
+{
+  "source": "data_source\\lettuce-npk",
+  "destination": "data",
+  "seed": 42,
+  "source_files": 208,
+  "unique_files": 203,
+  "duplicate_files_removed": 5,
+  "class_counts": {
+    "Healthy": 12,
+    "Nitrogen_Deficiency": 57,
+    "Phosphorus_Deficiency": 66,
+    "Potassium_Deficiency": 68
+  },
+  "split_counts": {
+    "train": 140,
+    "val": 28,
+    "test": 35
+  },
+  "manifest": [
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn5.png",
+      "output": "data\\train\\Healthy\\Healthy_0000.png",
+      "label": "Healthy",
+      "split": "train",
+      "sha256": "ac6e99307c4f730f3aad47c3988096939b42e0b82eccdf5de80fd523d819e152"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn3.png",
+      "output": "data\\train\\Healthy\\Healthy_0001.png",
+      "label": "Healthy",
+      "split": "train",
+      "sha256": "52d2120f4eb3b3123727016872d21c7912b7a190204a9f5124f92f73977d8c51"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn11.png",
+      "output": "data\\train\\Healthy\\Healthy_0002.png",
+      "label": "Healthy",
+      "split": "train",
+      "sha256": "be12f4530758f67918d648374babd82256196498eb22ad1110be3ff2b29fe70b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn6.png",
+      "output": "data\\train\\Healthy\\Healthy_0003.png",
+      "label": "Healthy",
+      "split": "train",
+      "sha256": "3dfc212a60603d5cd32a8a393976817d45dfb64246f63f325ed3558bf5b9991f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn7.png",
+      "output": "data\\train\\Healthy\\Healthy_0004.png",
+      "label": "Healthy",
+      "split": "train",
+      "sha256": "e3f402b514cb773c2f75910c8ea17883951b0b5e47e3e09f898b144f2e89a44c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn4.png",
+      "output": "data\\train\\Healthy\\Healthy_0005.png",
+      "label": "Healthy",
+      "split": "train",
+      "sha256": "dba5a776ab975d0f6491694478f1e2afd9011ad7e45cb9f7cbdc56c082a2a2ff"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn9.png",
+      "output": "data\\train\\Healthy\\Healthy_0006.png",
+      "label": "Healthy",
+      "split": "train",
+      "sha256": "94bc268e0ca045c50092d3b461d5afba7d781cfa9880133f93cc4a99078e6030"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn12.png",
+      "output": "data\\train\\Healthy\\Healthy_0007.png",
+      "label": "Healthy",
+      "split": "train",
+      "sha256": "f576afeb36b4c05d7f70c0cce8f0ce794d759f7ad0b992468b98058be7f4f5e1"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn2.png",
+      "output": "data\\val\\Healthy\\Healthy_0000.png",
+      "label": "Healthy",
+      "split": "val",
+      "sha256": "0d521833271501756de98a039f2a0d8d17c923f1fe638f3ec4aa9c64fede4310"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn1.png",
+      "output": "data\\test\\Healthy\\Healthy_0000.png",
+      "label": "Healthy",
+      "split": "test",
+      "sha256": "2b1797586333c8e551ac9c5e17ea336e81f344d2e8e8a8161a67456423a43afb"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn10.png",
+      "output": "data\\test\\Healthy\\Healthy_0001.png",
+      "label": "Healthy",
+      "split": "test",
+      "sha256": "feb85e56499253280cae1b9bb3f092b2184893763f9ba4241dbb15210d672be5"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Fully Nutritional\\fn8.png",
+      "output": "data\\test\\Healthy\\Healthy_0002.png",
+      "label": "Healthy",
+      "split": "test",
+      "sha256": "5ae5ee764ea00d9ce6eaf2b22bbc2c20fd4906360038996b321c5da0f0ca2958"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_24.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0000.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "00d01b0e0b1d424830c52cc846bfa39ce290802881cdb5665c661e1a0e5e1eca"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_39.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0001.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "1703585be32a6a1ee48084fb36e709bed3d1a026b208d536f24d4d4fd2914d2b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_15.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0002.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "c30afc4eabdedd1dc5073a6a7e975c94efda50cd263de5776d4ae3b84d23654f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_49.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0003.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "0ad2e094990c45ec933d0e9ceb806d61fd0ecad7b219d74586b061e8906bf46f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_16.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0004.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "8829af411081b5f00b7ca5408501189bab04303aef2182bf2f822f161d38dd07"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_30.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0005.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "abcc4c73b4b5adc8a9472cfa29a261007b5f2bbb150c91aec44fdacc5527f847"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_46.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0006.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "16c545b987a143fde0478f4dee4790547c91aa2935106a95fb4e20eb4682029d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_27.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0007.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "501ac259844ac1e4d19e0381287cbdb4735785b3285e1125cb4b4801b205c2e6"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_25.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0008.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "f5ff4af970120d2ea40ec10a90f45cf804aa4bf3f3ea0d9a4c697e72a5318c88"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_7.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0009.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "4e59947483cb10c0b70249f3c76a6ba16f9352c113daecf698110f9ea8fffc23"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_57.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0010.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "3528aa46a93772c592166304ff7a34e052ecbf4b460ed3d7890f6e2fe0bece09"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_47.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0011.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "aa099bc8570609234c002e86b143cb97f72ef0d681d032a3feb7775eb7b6a376"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_13.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0012.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "8478691054f364e2e602fb0ecb5fefcb748a08f5d324311d4a5ac51961c30171"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_29.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0013.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "6ca76490cfd60bd455d95c2b1810fed617940fa9f4876b5000518b3877919898"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_5.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0014.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "ac5c64cedf483c4ac44bcd0576f339b3ce701b16ccf05f4723358e1d856a4bca"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_33.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0015.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "e0e1bcc799a41c61f8d547b1e44c747c6ad226a2bac65f9ac5f570ac35334897"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_37.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0016.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "9f93d0d9b8ef9d90028040fb52d86e20c236ab48136b35957f9c5544d6f7fc3a"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_40.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0017.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "557146a3cd9a01cd093f014b843a3cf5d163765cb78db31e8153fc3d00d9e438"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_52.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0018.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "4de64c47f1a46618fa9d1ff72e143b1103069e3523eb244b77d58b41d988cc38"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_55.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0019.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "967c46bf98b25247e3449d898f32716c80b5fd0109736a2000c5a63d6b7f8c66"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_17.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0020.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "d3e39bbca2c99b7562611835f20e7a3bbcc5af11e73b2112819ee44ed5765cc9"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_28.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0021.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "13ce8733b9d9c44070e0335be626e52d42dfe6771430188ac2602b920485b772"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_31.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0022.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "2961bb81417b0aadc56c46cfb2017b129cc2449e7144bf0456040af76ebccc55"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_2.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0023.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "5c13ed4b63fdc15917447aa52fee06bcc5e69e0b206f73d6091562950220ece8"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_54.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0024.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "121d2f864d92adf1412bb4bacf6f2bff59a82d4dda5ceb0515cacb65f2e47941"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_53.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0025.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "b6715b0cfb8da8f0a8e8c6ddb9e8e7020ed0bfa392f32c175e49197799948c8a"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_9.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0026.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "a377d25392dd6b08dd920dc3cd4efd67e55c69b0b187254b0a396a289ed0081f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_12.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0027.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "5a26962e696dac7f0ffcdc175f75f98eb72443ff15f960636f3118fd7a03b5a9"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_43.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0028.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "e0142cfda03ddd0c15dc0a4b8c6a22df231a47077aa1ab7c2d37e5eebad642bb"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_32.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0029.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "3fed1765b3c7a8f797a570f1c4f968185335918d4defa5bfc903346887cdea5d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_38.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0030.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "caad64f79018e977a1725d5d5c2c5f033e92658975402b79324fb6517b9e966c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_59.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0031.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "a762a1b11684391c3b771ba12e275107bd385e888731e4661f91f2da199a547e"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_18.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0032.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "aef765fb086da15c5776aa751b503900a538777946572faa7491b4d335be8caa"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_56.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0033.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "54c481ed3b6560e185e880f505ef2af98fe530f5122aaf9dc664fe4ebe9814b0"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_3.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0034.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "a6ca484edbf4dbae8ee09bf40bf122291722222f9dbbdf56d32447a52362b6f7"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_35.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0035.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "333d09b363af1be5af4d9428d3b64e71bf179fe4f6c7b7b26c04f57fe9b83865"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_19.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0036.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "0c2ce718a4097d99ee43c521249c09d5cc6985c42f05c1e8251f66a7b73e14b3"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_1.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0037.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "f810a9790093a351a38f79bce02014051663fb12ff1ed322329ad6cfe9183b32"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_26.png",
+      "output": "data\\train\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0038.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "train",
+      "sha256": "ecb3a3c5bf5bd8eec363c4aeba03f9c1eb71bf586e928902c88937ddfb3acb34"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_44.png",
+      "output": "data\\val\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0000.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "val",
+      "sha256": "367e88dd575ddaa56e77797ebd423cb54371192bd88452c9845b8d9ad62259b3"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_36.png",
+      "output": "data\\val\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0001.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "val",
+      "sha256": "68a36f4ca938fcc495fa969bf09c7c01a793a0ad561373b81eb2b085e2db8c5c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_58.png",
+      "output": "data\\val\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0002.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "val",
+      "sha256": "276b0d3561873ea2774f9f2ec821c14091cf7b8a3c9f5ad7da9e6135cd83a3e5"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_34.png",
+      "output": "data\\val\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0003.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "val",
+      "sha256": "d3d18ab92d8782142588b2cce88c6fc70e2a55f512dbf9a0bf985a637002a610"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_41.png",
+      "output": "data\\val\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0004.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "val",
+      "sha256": "12887fb8f84e8446b1a4f01211650f61e18ade029ea52ec016386a7bd30cf5a8"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_50.png",
+      "output": "data\\val\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0005.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "val",
+      "sha256": "52f10473197a9756d65f8a30a3f2b39af29d0620f1abda8a1eb37489b912759f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_48.png",
+      "output": "data\\val\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0006.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "val",
+      "sha256": "b460ca4738187a38a372f899ae23c4eb4ca7896a173da58eaf1f09951e99ed66"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_51.png",
+      "output": "data\\val\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0007.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "val",
+      "sha256": "3ced29adb22dafa00629e3b2522faa2b86a38a813e1e1461fdf3e919368cfc1e"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_20.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0000.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "70fe3b7a96b216d96028becfcc2a723c750e2d363ea214e41864b9f4177a9317"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_42.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0001.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "4e0a48d061d5e41b2d65aa17b19a4dbdf62e091568b8c64aecf2e353825ca660"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_8.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0002.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "1522e42e0cdc646265a4bc35526f7feb91a649b4063481808b5f6ed235a0118d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_45.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0003.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "96519098004ee7e893d1a637504b4a70e524e3e65fa8f82a059ae6c5ccd024c7"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_4.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0004.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "dd6e605c982b0eef106d58f759d603641745b954dabcd8f8c1f012df1b509124"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_22.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0005.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "fa26ca2aa2be994e32f01925f704b2d3ba7e0e26f08724aa36f8e6a1eb22ffc2"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_21.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0006.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "69ab7717fb93dd894a1dd7fb490d07e640e53ec6b806ed7d49193dd4f05e567d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_14.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0007.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "a8b84eb71c6e55d99f33a9199e7b220ee96e0c999957d22b9a84f2afcd124503"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_10.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0008.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "c73f1d182e7090d2a9a95e67c44bb1f03483e9733983e93f9abcfc138c0fe35f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Nitrogen Deficient\\n_11.png",
+      "output": "data\\test\\Nitrogen_Deficiency\\Nitrogen_Deficiency_0009.png",
+      "label": "Nitrogen_Deficiency",
+      "split": "test",
+      "sha256": "9eae643cdf5f65e660731d48ed6bc62c36fd8a00eb57b6ca6047dde9b5307841"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p10.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0000.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "6f3c370902f53fcdab4eb3845f6538da16f20c66346089f5e569c2ade62ed59b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p24.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0001.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "66f4d142b722a91ab7330b09a761663b2374e3e3f082c364f4c43b43a079b834"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p29.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0002.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "50f148cb278096a5abdf38155a3938480f139bfbd27b7050b9610c0dfe5939f1"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p33.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0003.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "7b67fb55cfbe953042898e0c509aca529d9dba9ec32ad9c8ca85919f23026494"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p1.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0004.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "448d440f41a62a6450934a69ba61ddf0f331c6ac6d4803edbb0a6a959ed9e337"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p63.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0005.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "ec0a0cb1bc67274393d2bd2cde2b53b6a8a91c61644b8218bde4d9ae0eb4c32b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p38.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0006.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "1384559308c9761c7fac1da4adf34e7f36a7dc486b5e7e55dadbfc09ca9130a2"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p37.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0007.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "0f333a54a713af9f27886e7b977eab5377051ef555f303e1f93f5a372d32a3ae"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p44.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0008.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "e0e8a30da8de3bf472d5a10fd6f52067cee1670cbfd82357b03ffe80b4962729"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p14.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0009.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "074c1f9c852d8401531c987ee42e404985e6d4793afb8cc1007ec467a2b0a3ea"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p34.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0010.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "7a5d3bc3d17f69bf36bac6c22d447dd86917e6a265f3f0b2065de3356b2a19a6"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p61.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0011.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "7b46a07371f046f5eff80af1e0d8b75381ba3643b1a7e829140191dc5d84e1e2"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p39.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0012.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "4d545040e89f6ab815d00cb820386bc1f63c40183f92ddd8ce226a6a185757ff"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p18.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0013.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "1b38c110f82b249166eba0649419399a025134d162fc4386b51193233694888d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p2.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0014.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "fe7128444cb4199a0aa5a9499191a7ad54d50ec64e13fe7a418b62b5c487ad85"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p35.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0015.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "cd9a103d2965b2d7ea7298603138a907dbe2dba9c7200268d1eecc160acb031b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p16.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0016.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "eddb0332b41b856c75805e1b0df19ac951ea5d8b286f1ee155ff0a7c6ca06c5f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p27.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0017.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "df891c3e1f723d18e34395c8abadcad3a262ff2fa06bfb23898cac80ebafd916"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p17.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0018.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "11e174274dbb2eb0e032c5b569e1ec4a6612033030e4bfb6745b7758c48a7a0a"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p56.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0019.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "474ec723f3cac3aa3846884ebaecdab42a07604ab4500c67c3393c3dbebe9c80"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p47.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0020.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "d12da5f2f73b6f590e2d5e933af48c9de58e958977012ba4310c446451c6c87e"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p57.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0021.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "1bc60e5f48b752514f9dbe7676ec1eb8e979b8c398c105d2d9d862ed666e615f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p9.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0022.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "bc23d94071f12534e45637709d89bbc7baae90ff24f59934c14a4a4539580cac"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p59.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0023.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "ca1d7c370a763ff63efe5553c3f37498672ad21d1ddca5696353206cc32be7e9"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p4.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0024.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "7b38b2e41a701891e4f1d3033c4990d39339a5f040df1adab85e3df7e401c8bb"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p60.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0025.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "993147d0cdf2570fd40bda073e43272fba5fa745af9656e522ff95aca9599192"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p58.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0026.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "3cd6b7d760a63eb4b7375e38595d150b3ab73bb33f0e9daa36697f7ccc9585d1"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p62.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0027.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "eb0d8e2b7c9c55823842f57c0441161e4d0ac40c4bcb1e81235c4efa1b894404"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p26.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0028.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "eea28a4e5ab060258e29f55c5f908fb54c4b4cfe8f7f459505a1a21e6a273d1f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p15.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0029.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "d7e659f5c22355234ed4e157f14fbea9fe26f3b73348deeb5f9163d2feb4b0ce"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p52.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0030.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "8717c2f53e15065772d7a4fbfc4906990c8b921b53f7e442467eafd6696236a2"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p54.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0031.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "717adcbe1f790ef978df2f545689f0a9d5fde1a7ca98bfe6b4aa53e57c2d97ef"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p32.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0032.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "50fedcaa74684928b2fa60daf5705ddcb308d36bd4c81d3c5e84956103f9377f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p45.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0033.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "fe39faa8cd94df5321313837465e43a8d0423860630f693057085db7e4763a74"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p11.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0034.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "b571d45912292db7edf95e3aac4d0218978bbee876a787ad424633427362bd79"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p8.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0035.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "190e29553184b369291489a62b3b5a6dbeb220813ea762669b56a231b9f22b10"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p12.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0036.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "272abd6b8622bdc3640f19e97ac0d6d637542db7187894043cbfaa30e414083b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p28.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0037.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "b046e0325e6ab1188ea41025631f4cb0ad9e967df8f2b80d8d08982cd1b29d90"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p22.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0038.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "bbd62ff0f9472b717c9996e76cd280dcf3af3a1b7556ff9c98f07872e9633ef9"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p7.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0039.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "46d19b0220ab119c0e3deaba9c782ce29d8f13922a6963ed97016c8565c0cb12"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p66.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0040.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "5152e8083682c425e769e35f63a33a14a63f548d78844bfe51a2ef01e9b63f1c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p31.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0041.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "0c24a0b437b2fe1475362f8dbf34ea0827076533044aa39ad4f3cec11c09354d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p68.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0042.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "29c72677357b13af0e97e303c4ed62a6b83de6781367d83f78462c6c4945bfd4"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p53.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0043.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "bd71ee9ba94996db63e131b99fcf17015ec55023935aa698956730a541d34a58"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p23.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0044.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "f4d779c751d42e111d979d766d1d740dd0377e11edc87ee65a2431e6cba2d871"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p40.png",
+      "output": "data\\train\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0045.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "train",
+      "sha256": "eec35107a4090e847cce95dbb33de567d2bf2a4748996262b34c9f99a401bb65"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p64.png",
+      "output": "data\\val\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0000.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "val",
+      "sha256": "23c2485ae01d2f386aa1e52952be57016cb379bf976552ef5377e321953d976a"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p67.png",
+      "output": "data\\val\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0001.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "val",
+      "sha256": "b148523055dfec28d6e29ef16e406bd3de3bb4e74a9cd6a0c4046257f6be578c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p46.png",
+      "output": "data\\val\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0002.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "val",
+      "sha256": "25cafc0a75c711d5a1a2c71db0736aa7ddc8ca94f6cf15448a5f19a3e4c3d650"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p13.png",
+      "output": "data\\val\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0003.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "val",
+      "sha256": "0632f1203b08bf3ca2d82874665d75f548aa52f08aa4ee05b92bd4ab3fd4a509"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p49.png",
+      "output": "data\\val\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0004.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "val",
+      "sha256": "5f801101da0dba5026b2e1d48f9a45ab1ae79c38dcfb510b52cea02014b921a4"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p50.png",
+      "output": "data\\val\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0005.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "val",
+      "sha256": "9a584985b774182ae0f32237e802b622b9458dd964bef38c1e60f91877858084"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p51.png",
+      "output": "data\\val\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0006.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "val",
+      "sha256": "de10dc7f345d5c87c6b8a5b39fcac4893dfc97b7f4a8d411cd5515877154b275"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p25.png",
+      "output": "data\\val\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0007.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "val",
+      "sha256": "c3632dd6d0c15dabcdfe2a5750dc820b688aabbcda58f49c46e4b6dfbc295c28"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p5.png",
+      "output": "data\\val\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0008.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "val",
+      "sha256": "ecdf41b71c11cb5ddef64ce1512641009ab3d3306afeb21bc2fdc216e2d9efb4"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p21.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0000.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "59549be8066844ec8cd0ec1480a026f3a5c4d35633cb944705d69bd8af4b3df8"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p3.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0001.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "578c58a3dfea011d851a0c6b01b86261d8f6450a0a033010eefc04942aa536ca"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p65.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0002.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "10c49c9876151025d052ecefc55eaf41f408798179da130bd3246333d280dd51"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p19.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0003.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "62f2bbce9a350c0edb3156666f69dd6565e78638a66d5e2318bbcc01003d0bce"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p30.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0004.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "1ca15b51f70cfcf871b894fcce3c80028b2f4bb3fabcbd60901fdd9cd972259c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p6.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0005.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "25b822c738aefb195f813e19da929cd6b3c5de19c261dc1a3687ac2f698c491b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p48.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0006.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "2692af36465472c3418e3fb76e008b8e0ead5f652e29d2ff46dcdd46b366a1ec"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p36.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0007.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "44fa9ea31760ac313634375f34fae6064f4d66c7ed53770370434e3bc56ff27e"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p43.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0008.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "6d4674da85df36cc61db92cac2cd92c7973cdbfbf4299508b2690dfe7fc3abeb"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p55.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0009.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "5e8046ea098fd8ecba362bc1b6f6b06df4b004d690242a62bc81bb473ab28cdc"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Phosphorus Deficient\\p20.png",
+      "output": "data\\test\\Phosphorus_Deficiency\\Phosphorus_Deficiency_0010.png",
+      "label": "Phosphorus_Deficiency",
+      "split": "test",
+      "sha256": "a8550e7f59ebea494a7779b69b8c8992ffcb2e0bb60c088cfaa096708336d721"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_52.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0000.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "23fe677b0275995bab81ef1bd1fa21fc7d1216b955490cc5a3242cefe49dd12d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_38.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0001.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "d94e8e585c91f9f475e735010375215bed625841c947b1e5ec49d6ecd935cfa8"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_13.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0002.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "e85d88e9f3cb665f14a73a46af0694640ce48c0f4d2164ecb53262e979802c9d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_42.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0003.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "ab1209e8d819aba279c09e6e0ef8a2fad4eef4ad21583f6428fbea7b4d530bae"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_9.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0004.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "56f292867830ea9133777c7942314173e46061aa922cc64380566812b7227db6"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_48.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0005.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "29fc6b30bb45f9bc4766e0b7194c2293ae6d0c09e95ad69dd5801a9388d883e0"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_21.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0006.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "467ccff4490a3761090856b0c20091c54c2c97e513372a472a4783c799af550c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_11.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0007.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "c0e571fd46a7e167b0287a2533e200cb114baf3951cd40e8fa3c8dc2517ceefa"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_72.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0008.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "a158d56b1134b50559bd04d5694e1c8458d410201fac7463446559ef16b8333c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_5.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0009.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "e7371d5c2fd0560c3c99002236d4dbb8c5e762f66d286f58b7870075f7a7f6d8"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_3.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0010.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "edd9140a5e3b3e244d3a0cabd3bdb0be73f6f2b3d438e927f2350466e79afd0c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_64.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0011.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "f310bb6d5104bf22693d9292b3c1054afe92c90e2a850d84782846a8a3a093df"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_33.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0012.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "3193826a2fd6049e797c49b65df29f3eb5d51ffdaa1ddb25f547dba499c23951"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_50.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0013.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "85f92b12b0c47769d8674388bb2c795d217ad3ed42b2c005bf7d623dc3ce2b43"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_22.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0014.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "198315f3d6e614ffd3f0a4cce8e1e8dd3eb6ab825c4812a7b6c74ff4431ca2ca"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_35.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0015.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "ffcf859cc61292e9911f631bfea47b0fa62a2fb6ad58d29f1c99a273d7272416"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_10.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0016.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "437d7d67010e2da9d55123d53799acfe7492218b32b708e040fc3e3facf329bf"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_8.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0017.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "b9d024b7793a94908ee2ac36fee5951d80f53880c51c5381e9aa3f3417373f6b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_56.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0018.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "28bc1d4f523b15546ebdab3ccec6842474f8626b255e6fca830942f51df1ed5e"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_67.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0019.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "2dedbdf5279d74807db1a4304c34c83e30d6bb4178c805f9b64c8e5218b1c029"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_12.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0020.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "f4c4268eeb34f4d4f91b948be3ce13b23c07bb33b426bb5e0c25a938b4578204"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_32.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0021.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "c744633cc1e81869fa6ff32b4cef97d3972c72e54ecbfd52e9b3d6a1982e2dbd"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_23.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0022.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "a6d5447d7fd6216d91d9ab9354ed4096ec972b0834d2fa25728e390af23ac39b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_57.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0023.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "63f2c2ddd1851b75ee5690b9b3aa9913725fb6d24ebc162bba38c1dc91c4fa42"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_62.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0024.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "8cefd697974f5bb3ef29cacf15dafd8f3a0dbf6e51e6a155223cc662b3720139"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_55.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0025.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "be7b15c1a51c74a95192bdceaa9eacc0eac4649f740ee6d8b578b9299ff2c86b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_46.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0026.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "79946f332b6a8a32598b205c69b10718ecb7bbe965254143506f519eccb78ec2"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_37.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0027.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "73b40ce77ca9eddb37ff942d01b54d769d379e300aa8774448d310f92cec2387"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_71.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0028.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "bf4deac2dd0611164745b83b4a38e533528653351ab99ce477dffb24959d2708"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_14.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0029.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "0698cc40fa0927ceac23025fbd41869527ddaf901debccf86e60da895b0f6708"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_31.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0030.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "331dff839f10dce43fb45667c53678e40a797ba697b3e6d090fc4dd6248415a9"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_30.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0031.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "0b47bfd8fb3ca75b2f05a8c4a9d1cbc274aae827804cacb4c0ea38b64b3291c1"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_18.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0032.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "c485bc4c0df697c3e73b0e4b7c0f5b9b2ce1c4aa839c4c7b152aa09ceb22c5cd"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_20.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0033.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "8219e07c0b11fb04d9dab7ca2e52f24d1a84c4aa098248c8086a096c5b427c96"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_43.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0034.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "8a2f6b3d6e2485e7ee87ee4abe9fc768ad118ffcf5a189225d235d375f3daa0a"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_27.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0035.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "acf4223088b029cb96047072095b4fb2978f1a75a08f73818f5f3de795de9dd9"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_15.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0036.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "62bf1bad53eed9cd309a8e1097cf6a7bb9894a0368cd1feff9032bd88e91a4b3"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_45.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0037.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "c320966b2bcf8fef2e123bde167d267564fd77a18d0c9192c16536e1232df24f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_2.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0038.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "e03fe4a251ad05d0e544c8779aa70e4a2a7d576494057c0e962a2ce383a85e2b"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_39.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0039.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "ea5c24996e4f6e858a8d6ded8c3e78eeb776aa8df383d25f2e529dbbd2fe7f67"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_63.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0040.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "2893c64666ca6a7458166106288fafae2d4fc72391662514b5a41da375c9dfe9"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_60.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0041.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "0ad9405adbb70dae6017d4042d121dffd5d8992ac216472f1a810a549e0cfb80"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_65.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0042.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "3ac2ccadfdd3fe536793863634cf1e6c1c4ec6ca41c1ad9485feb23300df3c21"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_19.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0043.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "1c10fa55d73eadd6614477671fe902edaecea3be7e2dcb7afb56629787bc3b9d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_34.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0044.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "e5e17f9d152fdbdf744f389d82011c800737ab6c61c3b0f10125ef9bffd3703d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_26.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0045.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "27a2ecfc279f45141e871c9c126eb976730b7ce40ab907b469931ebd8e9dc001"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_58.png",
+      "output": "data\\train\\Potassium_Deficiency\\Potassium_Deficiency_0046.png",
+      "label": "Potassium_Deficiency",
+      "split": "train",
+      "sha256": "51cd2fef1e370e3d920738172f8860c425f1d79d87de758a00cc2410c33fb1bd"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_29.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0000.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "dbb6e959ace97765c9b70fce1cfca67d8babc27bf6aea91e480a1e74e682ff40"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_47.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0001.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "75b912ab6a8453ed05a45ddaab84a8f22cbdc8e27301570a3ba6ff48892f91ab"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_25.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0002.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "f34dff5f6e7498c5a5d1b8238e1ed18023e399ce29440a605cd1e7f79646f574"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_7.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0003.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "d0c6670c723e1085cc4675303d531e0976893285984edd88b23b68be82b4befd"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_40.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0004.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "633463ae6ec82c685a443ab03586d008f7d35270f38b0ae83eee152c12d184c9"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_61.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0005.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "84a7fbb5fdc390ef20d1cc9763fd4eb8bd7a03fcc3fb0de7af45ef02c1dba0d9"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_16.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0006.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "6c76ab26ef85387a999c9ec6d7bf2566e3d34588e6d0e5df83179087d7667d27"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_51.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0007.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "dbb01e7e31b311d42988934bedf61c492c853fe2e2f1e9b990472197b0de4cfb"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_49.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0008.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "55fc818c789d7217d6d21a55a942e516647e3b5d1e6a9314e1e1c6d0b279050d"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_1.png",
+      "output": "data\\val\\Potassium_Deficiency\\Potassium_Deficiency_0009.png",
+      "label": "Potassium_Deficiency",
+      "split": "val",
+      "sha256": "fa3bd1838d449d8fb4135af52c55d3ea514986ce0f686cf8d46d88ab78b5c3ae"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_6.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0000.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "1af114e46130624a055c316c23e270c0621ab90f1a94fe1ab117ea2775d35fa1"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_41.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0001.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "e399520247691dcb22563ada3721c67eb5a54156f1409cb6de50d9eb046c9a93"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_24.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0002.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "3dc83acd79d192d631c8426e829e86aec7fb8a3166d3d2087bf2ecc8eccbf428"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_4.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0003.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "f90703bfc0c9a853ceb625a2021259fe5dbc17c3494930d69112ee9d66a6f651"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_36.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0004.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "da97d3ed168511c38687baf79871af7f33ac274e7a806a161f581c10a035de36"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_44.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0005.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "168e05dadfcd18a71420184a88eb10cb86f6ee5dce983a80a30c45b0a058d6ae"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_53.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0006.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "2f2e9cce1ea06c1387f163fceeeb1d7856b64f5dc1e86931650b1d997d37ceab"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_54.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0007.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "0794a78d0481a09c4d686add35289becf8611a9d62f920f92835f15da721efde"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_17.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0008.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "f3bdc805cb346f48434d5c31d5b3a0f1b739d2c14181b63dbb69d3fc7cd5019f"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_59.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0009.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "5021e7952f3f7b233f1685d1c9110f4d2a195d8b3ac883c8e3d8cfc689e46e5c"
+    },
+    {
+      "source": "data_source\\lettuce-npk\\Potassium Deficient\\k_28.png",
+      "output": "data\\test\\Potassium_Deficiency\\Potassium_Deficiency_0010.png",
+      "label": "Potassium_Deficiency",
+      "split": "test",
+      "sha256": "cf2d0202cd0011dba9c3f9f061c95b40f13a88820cd42a5717efd6eca83728cc"
+    }
+  ]
+}
